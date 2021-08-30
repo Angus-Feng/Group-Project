@@ -28,19 +28,24 @@
         <h1 class="uppercase">CREATE YOUR CAKE</h1>
         <P class="uppercase">BRING YOUR CREATIVITY</P>
       </header>
-      <img src="images/black-zig-zag.png" alt="zig-zag-line">
+      <img class="zigzag-line" src="images/black-zig-zag.png" alt="zig-zag-line">
       <!-- main start -->
-      <main>
+      <main id="cake-main">
           <div id="slogan-cake">
-              <p>Select your ingredients</p>
-              <p>Pick the decorations</p>
-              <p>Create a cake of your own style</p>
+              <p>Select your ingredients <br>
+                Pick the decorations <br>
+                Create a cake of your own style</p>
           </div>
-        <form id="create-your-cake-form" method="POST" action="thank-you.html" autocomplete="on" autocapitalize="words">
+        <form id="create-your-cake-form" method="POST" action="/thank-you.html" autocomplete="on" autocapitalize="words">
             <fieldset id="main-form-create-cake">
                 <fieldset id="cake-details">
                     <table>
-                        <thead>Cake Details</thead>
+                        <tr class="cake-form-title">
+                          <td colspan="2">
+                            Cake Details
+                          </td>
+                        </tr>
+                        <tr><br></tr>
                         <tr>
                             <td>
                                 <label for="weight">Weight(lb)</label>
@@ -67,7 +72,7 @@
                             <td>
                                 <label for="extra-decors">Extra Decors</label>
                             </td>
-                            <td>
+                            <td id="decor">
                                 <input type="checkbox" id="decor1" value="berries">
                                 <label for="decor1">Berries</label><br>
                                 <input type="checkbox" id="decor2" value="choco-bar">
@@ -96,9 +101,14 @@
                         </tr>
                     </table>
                 </fieldset>
-                <fieldset id="contact info">
+                <fieldset id="contact-info">
                     <table>
-                        <thead>Contact Info</thead>
+                      <tr class="cake-form-title">
+                        <td colspan="2">
+                          Contact Info
+                        </td>
+                      </tr>
+                      <tr><br></tr>
                         <tr>
                             <td>
                                 <label for="full-name">Name</label>
@@ -120,7 +130,7 @@
                                 <label for="email">Email</label>
                             </td>
                             <td>
-                                <input type="email" id="email" name="email" placeholder="your_email@example.com" required pattern=".+@jac.qc.ca">
+                                <input type="email" id="email" name="email" placeholder="your_email@example.com" required>
                             </td>
                         </tr>
                         <tr>
@@ -138,7 +148,7 @@
                         </tr>
                         <tr>
                             <td></td>
-                            <td><input type="datetime" id="schedule" name="schedule" required></td>
+                            <td><input type="text" id="schedule" name="schedule" required></td>
                         </tr>
                         <tr>
                             <td></td>
@@ -160,14 +170,20 @@
                             </td>
                         </tr>
                         <tr>
-                            <td colspan="2">
+                          <td></td>
+                            <td>
                                 <input type="text" id="sample-image" name="sample-image">
                             </td>
                         </tr>
                     </table>
                 </fieldset>
             </fieldset>
+            <br>
+            <br>
             <input type="submit" id="submit-cake" value="GET THE PRICE!">
+            <br>
+            <br>
+            <br>
         </form>
       </main>
       <!-- main ends -->
