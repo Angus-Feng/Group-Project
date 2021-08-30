@@ -11,6 +11,108 @@
 /*****************/
 /*     INDEX     */
 /*****************/
+.index-header {
+    display: flex;
+    background-color: #B5E8D5;
+    height: 792px;
+}
+
+.index-header-flex {
+    flex: 50%;
+}
+
+.index-header-text {
+    text-align: left;
+    position: relative;
+    top: 50%;
+    transform: translateY(-30%);
+}
+
+.index-header-text h1 {
+    font-size: 5vw;
+    letter-spacing: 2px;
+}
+
+.index-header-text p {
+    font-size: 2.7vw;
+}
+
+.index-header-img {
+    height: 34vw;
+    display: block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-45%);
+}
+
+.index-zigzag {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.index-section-description {
+    display: flex;
+    height: 697px;
+}
+
+.index-section-description-flex {
+    flex: 50%;
+    text-align: center;
+}
+
+.index-section-headers {
+    display: inline-flex;
+    border-bottom: solid #242323;
+    padding-bottom: 15px;
+    margin-top: 15%;
+    margin-bottom: 12%;
+}
+
+.index-section-paragraph {
+    margin-bottom: 8%;
+}
+
+.index-section-button {
+    color: #242323;
+    text-decoration: none;
+    border: 2px solid #242323 !important;
+    padding: 5px 15px 5px 15px;
+}
+
+.index-section-button:visited {
+    color: #242323;
+}
+
+.index-section-button:hover {
+    background-color: #242323;
+    color: white;
+}
+
+.index-section-img1 {
+    background-image: url("/images/tarte.jpeg");
+    background-repeat:no-repeat;
+    background-position: center;
+    height: 697px;
+}
+
+.index-section-img2 {
+    background-image: url("/images/cake-with-deco.jpeg");
+    background-repeat:no-repeat;
+    background-position: center;
+    height: 697px;
+}
+
+.index-section-img3 {
+    background-image: url("/images/home-baking.jpeg");
+    background-repeat:no-repeat;
+    background-position: center;
+    height: 697px;
+}
+
 
 /******************/
 /*      CAKE      */
