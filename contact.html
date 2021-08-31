@@ -23,55 +23,71 @@
         </ul>
       </nav>
       <!-- nav ends -->
-      <header>
-        <h1 class="uppercase"> CONTACT US </h1>
+      <header id="contact">
+        <h1 class=""> CONTACT US </h1>
         <P class="uppercase">WE LOVE TO HEAR FROM YOU</P>
       </header>
-      <img class="zigzag-line" src="images/black-zig-zag.png" alt="zig-zag-line">
+      <div class="zigzag-pic">
+        <img class="zigzag-line" src="images/black-zig-zag.png" alt="zig-zag-line">
+      </div>
       <!-- main start -->
-      <main id="contact-us">
-          <div id="contact-middle">
-              <div id="contact-form">
-                  <form id="contact-us-form" action="#" method="POST" autocomplete="on" autocapitalize="words">
-                      <fieldset id="form-field">
-                          <h4 id="form-caption">Contact Us</h4>
-                          <label class="c-full-name">Name</label>
-                          <input type="text" id="c-full-name" name="full-name" maxlength="50" required />
-                          <label class="c-email">Email Address</label>
-                          <input type="email" id="c-email" placeholder="your_email@example.com" required />
-                          <label class="c-topic">Topic</label>
-                          <select id="c-topic-choice">
-                              <option value="None">None</option>
-                              <option value="order_status">Order Status</option>
-                              <option value="quality">Quality</option>
-                              <option value="shipping">Shipping</option>
-                              <option value="store_experience">Store Experience</option>
-                              <option value="other">Other</option>
-                          </select>
-                          <label class="c-message">Message</label>
-                          <textarea id="feedback" cols="50" rows="4"></textarea>
-                          <input type="submit" id="submit_botton" value="Submit" />
+      <main class="contact-us">
+         
+              <div class="contact-form">
+                    <form class="contact-us-form" action="#" method="POST" autocomplete="on" autocapitalize="words">
+                      <fieldset class="form-field">
+                          <h4 class="form-caption">Contact Us</h4>
+                          <div class="form-info">
+                            <div class="form-text">
+                              <div>
+                                <p class="c-full-name">Name</p>
+                                <input type="text" id="input-full-name" name="full-name" maxlength="50" required />
+                              </div>
+                          
+                              <div>
+                                <p class="c-email">Email Address</p>
+                                <input type="email" id="input-email" placeholder="your_email@example.com" required />
+                              </div>
+                              
+                              <div>
+                                <p class="c-topic">Topic</p>
+                                <select id="c-topic-choice">
+                                  <option value="None">None</option>
+                                  <option value="order_status">Order Status</option>
+                                  <option value="quality">Quality</option>
+                                  <option value="shipping">Shipping</option>
+                                  <option value="store_experience">Store Experience</option>
+                                  <option value="other">Other</option>
+                                </select>
+                              </div>
+                      
+                              <p class="c-message">Message</p>
+                              <textarea class="feedback" ></textarea>
+                            </div>
+                        
+                            <div class="button">
+                              <input type="submit" class="submit_botton" value="Submit" />
+                            </div> 
+                          </div>
+                   
                       </fieldset>
-                  </form>
+                    </form>
+                  
+  
 
-                  <div id="opening-address">
-                      <p id="opening-hours">OPENING HOURS:<br />SUN: 7AM - 4PM<br />MON-SAT: 7AM - 6PM</p>
-                      <p id="address">CHEZ FENG BAKERY<br />275 Rue Lakeshore Road<br />Sainte-Anne-de-Bellevue<br />QC H9X 3L9<br />T:514.123.1234</p>
-                  </div>
-
-                  <div id="map">
-                      <p id="directions">Get Directions</p>
-                      <div class="mapouter">
-                          <div class="gmap_canvas"><iframe width="1627" height="706" id="gmap_canvas" 
-                        src="https://maps.google.com/maps?q=21%20275%20Rue%20Lakeshore%20Road,%20Sainte-Anne-de-Bellevue,%20QC%20H9X%203L9&t=&z=13&ie=UTF8&iwloc=&output=embed" 
-                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://yt2.org">yt2</a><br>
-                        <style>.mapouter{position:relative;text-align:right;height:706px;width:1627px;}</style>
-                        <a href="https://www.embedgooglemap.net"></a>
-                        <style>.gmap_canvas {overflow:hidden;background:none!important;height:706px;width:1627px;}</style>
-                        </div>
-                    </div>
+                  <div class="opening-address">
+                      <p class="leftside opening-hours">OPENING HOURS:<br />SUN: 7AM - 4PM<br />MON-SAT: 7AM - 6PM</p>
+                      <p class="leftside address">CHEZ FENG BAKERY<br />275 Rue Lakeshore Road<br />Sainte-Anne-de-Bellevue<br />QC H9X 3L9<br />T:514.123.1234</p>
                   </div>
               </div>
+
+              <div class="map">
+                <p class="directions">Get Directions</p>
+                <div class="mapouter">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.4347843400406!2d-73.87418174867919!3d45.42073617899786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc9393408a19843%3A0x88a64ec7bbd12cb5!2s275%20Rue%20Lakeshore%2C%20Beaconsfield%2C%20QC%20H9W%204J2!5e0!3m2!1sen!2sca!4v1630393120060!5m2!1sen!2sca" width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                  </div>
+              </div>
+            
           </div>
         
       </main>
