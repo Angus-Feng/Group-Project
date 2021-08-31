@@ -584,7 +584,7 @@ input[type="email"] {
         padding: 2rem 0rem;
     }
 }
-@media screen and (min-width: 401px) and (max-width: 768px) {
+@media screen and (min-width: 415px) and (max-width: 768px) {
 /*******************/
 /*      ABOUT      */
 /*******************/
@@ -658,7 +658,7 @@ input[type="email"] {
         height: 120px;
     }
   }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 414px) {
 /*******************/
 /*      ABOUT      */
 /*******************/
