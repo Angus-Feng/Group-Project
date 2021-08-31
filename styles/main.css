@@ -113,6 +113,74 @@
     height: 697px;
 }
 
+.index-chezfang-flex {
+    display: flex;
+}
+
+.index-flex-25 {
+    flex: 25%;
+}
+
+.index-chezfeng-header {
+    text-align: center;
+    font-size: 3vw;
+}
+
+.index-chezfang-img1 {
+    background-image: url("/images/cup-cakes.jpeg");
+    background-repeat:no-repeat;
+    background-position: center;
+    height: 460px;
+}
+
+.index-chezfang-img2 {
+    background-image: url("/images/cup-cakes.jpeg");
+    background-repeat:no-repeat;
+    background-position: center;
+    height: 460px;
+}
+
+.index-chezfang-img3 {
+    background-image: url("/images/cup-cakes.jpeg");
+    background-repeat:no-repeat;
+    background-position: center;
+    height: 460px;
+}
+
+.index-chezfang-img4 {
+    background-image: url("/images/cup-cakes.jpeg");
+    background-repeat:no-repeat;
+    background-position: center;
+    height: 460px;
+}
+
+.index-chezfang-img5 {
+    background-image: url("/images/cup-cakes.jpeg");
+    background-repeat:no-repeat;
+    background-position: center;
+    height: 460px;
+}
+
+.index-chezfang-img6 {
+    background-image: url("/images/cup-cakes.jpeg");
+    background-repeat:no-repeat;
+    background-position: center;
+    height: 460px;
+}
+
+.index-chezfang-img7 {
+    background-image: url("/images/cup-cakes.jpeg");
+    background-repeat:no-repeat;
+    background-position: center;
+    height: 460px;
+}
+
+.index-chezfang-img8 {
+    background-image: url("/images/cup-cakes.jpeg");
+    background-repeat:no-repeat;
+    background-position: center;
+    height: 460px;
+}
 
 /******************/
 /*      CAKE      */
@@ -185,6 +253,54 @@ input[type="email"] {
 /******************/
 /*      SHOP      */
 /******************/
+/* .shop-header {
+    background-color: white;
+} */
+
+/*.shop-header-text {
+    font-size: 5.5vw;
+    color: #242323;
+}*/
+
+.shop-main {
+    display: flex;
+    height: 1780px;
+}
+
+.shop-product-nav {
+    flex: 19%;
+}
+
+.shop-product-ul {
+    list-style-type: none;
+}
+
+.shop-product-li {
+    text-decoration: none;
+    color: #242323;
+    font-size: 2vw;
+}
+
+.shop-product-li:hover {
+    text-decoration: underline;
+}
+
+.shop-product-li:visited {
+    color: #242323;
+}
+
+.shop-products-section {
+    flex: 81%;
+}
+
+.shop-flex-27 {
+    flex: 27%;
+}
+
+.shop-img {
+    width: 428px;
+    height: 457px;
+}
 
 /********************/
 /*      RECIPE      */
