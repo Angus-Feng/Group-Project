@@ -250,6 +250,11 @@ input[type="email"] {
     font-size: 25px;
     padding: 10px 60px;
 }
+
+#submit-cake:hover {
+    color: #fff;
+    background-color: #000;
+}
 /******************/
 /*      SHOP      */
 /******************/
@@ -305,13 +310,397 @@ input[type="email"] {
 /********************/
 /*      RECIPE      */
 /********************/
-#header-recipe {
+.header-recipe {
     background-color:#F9DB79 ;
 }
+
+.recipe-main {
+    font-size: 40px;
+}
+
+.nav-recipe {
+    border: thick solid black;
+    position: relative;
+    left: 10%;
+    width: 80%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.nav-recipe ul{
+    margin: 15px auto;
+}
+
+.nav-recipe ul li{
+    font-size: 30px;
+    list-style-type: none;
+    display: inline;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.nav-recipe ul li a:link {
+    color: #000;
+    text-decoration: none;
+}
+
+.nav-recipe ul li a:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #000;
+}
+
+.recipe-name {
+    text-align: center;
+    font-size: 80px;
+    font-weight:normal;
+}
+
+.recipe-intro {
+    position: relative;
+    width: 50%;
+    left: 25%;
+    font-size: 30px;
+}
+
+.recipe-img {
+    width: 500px;
+}
+
+.recipe-detail {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+    left: 20%;
+}
+
+.recipe-ingredient {
+    background-color: #FCEDBB;
+}
+
+.ingredient-title {
+    margin-bottom: 0;
+    margin-left: 50px;
+}
+
+.ingredient-list {
+    margin: 50px 70px 100px 70px;
+}
+
+.ins-link {
+    position: relative;
+    width: 30%;
+    left: 33%;
+}
+
+.ins-link button {
+    padding: 20px 30px;
+    font-size: 30px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.ins-link button:hover {
+    color: #fff;
+    background-color: #000;
+}
+
 /*******************/
 /*      ABOUT      */
 /*******************/
 
+.about {
+    background: #FFBFB3 ;
+}
+.zigzag-pic{
+    text-align: center;
+}
+.zigzag-line {
+    width: 300px;
+    padding: 2rem 0;
+  }
+  
+.about-us {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr; 
+    column-gap: 2rem;
+    row-gap: 1rem;
+    padding: 2rem 2rem;
+}
+
+.store-img {
+    width: 100%;
+    height: auto;
+}
+.store-story {
+    padding: 2rem 2rem;
+    background: #FBF4E6;
+}
+.store-story h4 {
+    font-size: 3.13rem;
+    text-align: left;
+}
+.store-story p {
+    font-size: 2.25rem;
+    text-align: left;
+}
+.owner-story {
+    padding: 2rem 2rem;
+    background: #FBF4E6;
+}
+.owner-story h4 {
+    font-size: 3.13rem;
+    text-align: right;
+}
+.owner-story p {
+    font-size: 2.25rem;
+    text-align: right;
+}
+
+.owner-img {
+    width: 100%;
+    height: auto;
+}
 /*********************/
 /*      CONTACT      */
 /*********************/
+#contact {
+    background: #FBB1BD ;
+    width: auto;
+}
+.contact-form {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(600px, 1fr));
+    column-gap: 10rem;
+    padding: 4rem;
+}
+
+.form-field{
+    width: 42rem;
+    margin-left: 0rem;
+    padding: 2rem 2rem;
+    background: #FFF2F2;
+    border: none;
+}
+.form-field h4 {
+    font-size: 3.13rem;
+    text-align: center;
+}
+.form-field p {
+    font-size: 2.25rem;
+    
+}
+.form-info {
+    padding: 2rem 4rem; 
+}
+#c-topic-choice{
+    font-size: 2.25rem;
+    width: 37.3rem;
+}
+#c-topic-choice option {
+    font-size: 2.25rem;
+}
+#input-email{
+    width: 37.3rem ;
+}
+#input-full-name{
+    width: 37.3rem ;
+}
+.button{
+    text-align: center;
+}
+.submit_botton {
+    font-size: 2.25rem;
+}
+.opening-address {
+    text-align: left;
+    padding:  4rem 0 0 4rem;
+}
+.opening-address p{
+    font-size: 2.25rem;
+}
+.map {
+    padding: 2rem 4rem;
+}
+.directions {
+    font-size: 3.13rem;
+}
+.feedback{
+    width: 600px;
+	height: 120px;
+}
+
+@media screen and (min-width: 769px) {
+/*******************/
+/*      ABOUT      */
+/*******************/
+
+
+    /*********************/
+/*      CONTACT      */
+/*********************/
+    .contact-form {
+        padding: 0rem;
+    }
+    .form-info {
+        padding: 2rem 4rem; 
+    }
+    .map {
+        padding: 2rem 0rem;
+    }
+}
+@media screen and (min-width: 401px) and (max-width: 768px) {
+/*******************/
+/*      ABOUT      */
+/*******************/
+.about h1{
+    font-size:5rem;
+}
+.about-us {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-template-rows: 1fr 1fr; 
+    column-gap: 2rem;
+    row-gap: 1rem;
+    padding: 2rem 2rem; */
+}
+.store-story h4{
+    font-size: 2rem;
+}
+.store-story p{
+    font-size: 1.8rem;
+}
+.owner-story h4{
+    font-size: 2rem;
+}
+.owner-story p{
+    font-size: 1.8rem;
+}
+    /*********************/
+/*      CONTACT      */
+/*********************/
+    .contact {
+        width: 40rem;
+    }
+    #contact h1 {
+        font-size:5rem;
+    }
+    .contact-form {
+        padding: 0rem;
+    }
+    .form-info{
+        padding: 0;
+    }
+    .form-field{
+        width: auto;
+    }
+    .form-text{
+        padding-left:4rem;
+    }
+    .opening-address{
+        width: auto;
+        padding: 2rem;
+    }
+    .opening-address p{
+        font-size: 1.9rem;
+    }
+    .map {
+        padding: 0rem;
+    }
+    #c-topic-choice{
+        font-size: 2.25rem;
+        width: 20rem;
+    }
+
+    #input-email{
+        width: 20rem;
+    }
+    #input-full-name{
+        width: 20rem;
+    }
+    .feedback{
+        width: 20rem;
+        height: 120px;
+    }
+  }
+  @media screen and (max-width: 400px) {
+/*******************/
+/*      ABOUT      */
+/*******************/
+.about h1{
+    font-size:5rem;
+}
+.about-us {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-template-rows: 1fr 1fr; 
+    column-gap: 2rem;
+    row-gap: 1rem;
+    padding: 2rem 2rem; */
+}
+.store-story h4{
+    font-size: 1.2rem;
+}
+.store-story p{
+    font-size: 1rem;
+}
+.owner-story h4{
+    font-size: 1.2rem;
+}
+.owner-story p{
+    font-size: 1rem;
+}
+      /*********************/
+/*      CONTACT      */
+/*********************/
+    .contact {
+        width: 40rem;
+    }
+    #contact h1 {
+        font-size:5rem;
+    }
+    .contact-us-form{
+        width: fit-content;
+    }
+    .contact-form {
+        width: 100%;
+        padding: 0rem;
+    }
+    .form-info{
+        padding: 0;
+    }
+    .form-field{
+        width: fit-content;
+    }
+    .form-text{
+        padding:0rem;
+    }
+    .opening-address{
+        width: fit-content;
+        padding: 2rem;
+    }
+    .opening-address p{
+        font-size: 1.6rem;
+    }
+    .map {
+        padding: 0rem;
+    }
+    #c-topic-choice{
+        font-size: 2.25rem;
+        width: 18rem;
+    }
+
+    #input-email{
+        width: 18rem;
+    }
+    #input-full-name{
+        width: 18rem;
+    }
+    .feedback{
+        width: 18rem;
+        height: 13rem;
+    }
+  }
