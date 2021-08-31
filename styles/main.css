@@ -190,15 +190,41 @@
     text-align: center;
     font-size: 40px;
 }
+@media screen and (min-width: 769px) {
+    #main-form-create-cake {
+        position: relative;
+        width: 60%;
+        left: 20%;
+        display: flex;
+        overflow: auto;
+        justify-content: space-evenly;
+        font-size: 30px;
+    }
 
-#main-form-create-cake {
-    position: relative;
-    width: 60%;
-    left: 20%;
-    display: flex;
-    overflow: auto;
-    justify-content: space-evenly;
-    font-size: 30px;
+    input[type="text"] {
+        height: 30px;
+        width: 250px;
+        font-size: 20px;
+    }
+    
+    input[type="email"] {
+        height: 30px;
+        width: 250px;
+        font-size: 20px;
+    }
+    
+    #flavor {
+        height: 40px;
+        width: 260px;
+        font-size: 20px;
+    }
+
+    #submit-cake {
+        position: relative;
+        left: 45%;
+        font-size: 25px;
+        padding: 10px 60px;
+    }
 }
 
 #cake-details {
@@ -226,34 +252,86 @@
     height: 150px;
 }
 
-input[type="text"] {
-    height: 30px;
-    width: 250px;
-    font-size: 20px;
-}
-
-input[type="email"] {
-    height: 30px;
-    width: 250px;
-    font-size: 20px;
-}
-
-#flavor {
-    height: 40px;
-    width: 260px;
-    font-size: 20px;
-}
-
-#submit-cake {
-    position: relative;
-    left: 45%;
-    font-size: 25px;
-    padding: 10px 60px;
-}
-
 #submit-cake:hover {
     color: #fff;
     background-color: #000;
+}
+
+@media screen and (min-width: 415px) and (max-width: 768px) {
+    #cake-main {
+        width: 768px;
+    }
+
+    #main-form-create-cake {
+        position: relative;
+        width: 60%;
+        left: 20%;
+        display: flexbox;
+        font-size: 20px;
+    }
+
+    input[type="text"] {
+        height: 30px;
+        width: 250px;
+        font-size: 20px;
+    }
+    
+    input[type="email"] {
+        height: 30px;
+        width: 250px;
+        font-size: 20px;
+    }
+    
+    #flavor {
+        height: 40px;
+        width: 260px;
+        font-size: 20px;
+    }
+
+    #submit-cake {
+        position: relative;
+        left: 35%;
+        font-size: 20px;
+        padding: 10px 60px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    #cake-main {
+        width: 410px;
+    }
+
+    #main-form-create-cake {
+        position: relative;
+        width: 40%;
+        display: flexbox;
+        font-size: 20px;
+    }
+
+    input[type="text"] {
+        height: 30px;
+        width: 150px;
+        font-size: 20px;
+    }
+    
+    input[type="email"] {
+        height: 30px;
+        width: 150px;
+        font-size: 20px;
+    }
+    
+    #flavor {
+        height: 40px;
+        width: 160px;
+        font-size: 20px;
+    }
+
+    #submit-cake {
+        position: relative;
+        left: 10%;
+        font-size: 20px;
+        padding: 10px 60px;
+    }
 }
 /******************/
 /*      SHOP      */
