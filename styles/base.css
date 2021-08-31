@@ -25,12 +25,12 @@
 /*************************/
 
 /* CSS Rules for Mobile Device */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 414px) {
   /* your code goes here */
 }
 
 /* CSS Rules for Tablet Device */
-@media screen and (min-width: 401px) and (max-width: 768) {
+@media screen and (min-width: 415px) and (max-width: 768) {
   /* your code goes here */
 }
 
