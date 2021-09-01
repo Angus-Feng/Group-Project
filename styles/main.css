@@ -11,38 +11,43 @@
 /*****************/
 /*     INDEX     */
 /*****************/
+
 .index-header {
-    display: flex;
     background-color: #B5E8D5;
-    height: 792px;
+    display: grid;
+    align-items: center;
+    height: 80vh;
+    max-height: 792px;
+    grid-template-columns: repeat(auto-fit, minmax(414px, 1fr));
+    grid-row-gap: 10px;
+    height: 40rem;
+    padding-top: 40px;
 }
 
-.index-header-flex {
-    flex: 50%;
+.index-header-img {
+    width: 90%;
+    max-height: 596px;
+    margin-top: 4vw;
 }
 
 .index-header-text {
     text-align: left;
-    position: relative;
-    top: 50%;
-    transform: translateY(-30%);
+    min-height: 500px;
+    margin-left: 20px;
 }
 
 .index-header-text h1 {
-    font-size: 5vw;
-    letter-spacing: 2px;
+    font-size: 4.5vh;
+}
+
+@media screen and (min-width: 769px) {
+    .index-header-text h1 {
+        font-size: 5vw;
+    }
 }
 
 .index-header-text p {
-    font-size: 2.7vw;
-}
-
-.index-header-img {
-    height: 34vw;
-    display: block;
-    position: relative;
-    top: 50%;
-    transform: translateY(-45%);
+    font-size: 3vh;
 }
 
 .index-zigzag {
@@ -60,7 +65,7 @@
 }
 
 .index-section-description-flex {
-    flex: 50%;
+    /* flex: 50%; */
     text-align: center;
 }
 
@@ -757,7 +762,7 @@
 /*********************/
 /*      CONTACT      */
 /*********************/
-#contact {
+#contact-header {
     background: #FBB1BD ;
     width: auto;
 }
