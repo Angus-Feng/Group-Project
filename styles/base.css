@@ -108,8 +108,6 @@ header p {
 
 #main-nav {
     height: 100%;
-    /* flex-direction: row; */
-    /* justify-content: center; */
     align-items: center;
     justify-content: flex-end;
 }
@@ -160,16 +158,10 @@ ul#menu {
 }
 
 #footer-wrapper {
-    /* width: 400px; */
     display: flex;
     flex-direction: column;
-    /* flex: 1; */
-    /* flex-flow: row wrap; */
     padding: 60px 90px;
     row-gap: 20px;
-    /* justify-content: center; */
-    /* align-items: center; */
-
 }
 
 .footer-column {
@@ -187,20 +179,14 @@ ul#menu {
 }
 
 /* STYLING ADDRESS SELECTOR */
-#address, #hours, #contact {
-    /* padding-left: 6em; */
-}
-
 #address p {
     font-style: normal;
 }
 
 /* Styling  Subscribe section*/
 #subscribe {
-    /* padding-left: 2em; */
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
 }
 
@@ -235,8 +221,6 @@ ul#menu {
   font-size: 45px;
   width: 30%;
   justify-content: space-between;
-  /* margin: 25px; */
-  /* padding-left: 2em; */
 }
 
 #copyright {
@@ -267,24 +251,3 @@ ul#menu {
         display: none;
     }
 }
-
-@media screen and (min-width: 1000px) {
-    
-}
-
-
-
-    /* #footer-wrapper > * {
-        flex: 1;
-    } */
-
-
-/* CSS Rules for Tablet Device */
-/* @media screen and (min-width: 415px) and (max-width: 768) {
-    
-} */
-
-/* CSS Rules for Desktop Device */
-/* @media screen and (min-width: 769px) {
-    
-} */
