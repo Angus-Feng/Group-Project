@@ -44,12 +44,6 @@
     font-size: 3vh;
 }
 
-.index-zigzag {
-    display: block;
-    margin: 10vw auto;
-    width: 15vw;
-}
-
 .index-article {
     display: flex;
     flex-direction: column;
@@ -211,6 +205,8 @@
     #footer-wrapper {
         flex-direction: row;
         padding: 130px 130px 0 130px;
+        justify-content: center;
+        /* align-items: center; */
     }
 
     .footer-column {
@@ -406,15 +402,6 @@
 
 .shop-products-bottom-row {
     display: flex;
-}
-
-.shop-zigzag {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 25px;
-    padding-top: 25px;
-    padding-bottom: 25px;
 }
 
 .shop-flex-19{
@@ -756,14 +743,7 @@
 .about {
     background: #FFBFB3 ;
 }
-.zigzag-pic{
-    text-align: center;
-}
-.zigzag-line {
-    width: 300px;
-    padding: 2rem 0;
-  }
-  
+
 .about-us {
     display: grid;
     grid-template-columns: 1fr 1fr ;
