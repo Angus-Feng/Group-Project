@@ -41,9 +41,12 @@
 
 /* CSS Rules for Tablet Device */
 @media screen and (min-width: 415px) and (max-width: 768) {
-    #mobile-nav {
-        display: none;
-    }
+    
+}
+
+/* CSS Rules for Tablet Device */
+@media screen and (min-width: 415px) and (max-width: 768px) {
+  
 }
   
 /* CSS Rules for Desktop Device */
