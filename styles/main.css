@@ -11,106 +11,109 @@
 /*****************/
 /*     INDEX     */
 /*****************/
+
 .index-header {
-    display: flex;
     background-color: #B5E8D5;
-    height: 792px;
+    /* display: flex;
+    flex-direction: column; */
+    /* display: grid; */
+    /* align-items: center; */
+    /* height: auto; */
+    height: 68vh;
+    /* max-height: 792px; */
+    /* grid-template-columns: repeat(auto-fit, minmax(414px, 1fr)); */
+    /* grid-row-gap: 10px; */
+    /* height: 40rem; */
+    /* padding-top: 40px; */
+    padding-top: 10%;
 }
 
-.index-header-flex {
-    flex: 50%;
+.index-header-img {
+    width: 90%;
+    /* max-height: 596px; */
+    margin-top: 4vw;
 }
 
 .index-header-text {
     text-align: left;
-    position: relative;
-    top: 50%;
-    transform: translateY(-30%);
+    /* min-height: 500px; */
+    margin-left: 20px;
 }
 
 .index-header-text h1 {
-    font-size: 5vw;
-    letter-spacing: 2px;
+    font-size: 10vw;
+    margin-bottom: 3%;
 }
 
 .index-header-text p {
-    font-size: 2.7vw;
+    font-size: 6vw;
 }
 
-.index-header-img {
-    height: 34vw;
-    display: block;
-    position: relative;
-    top: 50%;
-    transform: translateY(-45%);
-}
-
-.index-zigzag {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 25px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-}
-
-.index-section-description {
+.index-article {
     display: flex;
-    height: 697px;
-}
-
-.index-section-description-flex {
-    flex: 50%;
+    flex-direction: column;
     text-align: center;
 }
 
-.index-section-headers {
-    display: inline-flex;
-    border-bottom: solid #242323;
-    padding-bottom: 15px;
-    margin-top: 15%;
-    margin-bottom: 12%;
+.index-article-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 50px;
+    flex: 100%;
+    max-width: 100%;
+    margin-top: 50px;
 }
 
-.index-section-paragraph {
-    margin-bottom: 8%;
+.index-article img {
+    width: 100%;
+    height: auto;
 }
 
-.index-section-button {
+.index-article-header {
+    border-bottom: solid 4px #242323;
+    padding-bottom: 10px;
+    font-size: 2.5em;
+}
+
+#index-article-header-1 {
+    width: 6.5em;
+}
+
+#index-article-header-2 {
+    width: 8em;
+}
+
+#index-article-header-3 {
+    width: 7em;
+}
+
+.index-article-paragraph {
+    font-size: 1.5em;
+    width: 70%;
+}
+
+.index-article-button {
+    font-size: 1.5em;
     color: #242323;
     text-decoration: none;
-    border: 2px solid #242323 !important;
-    padding: 5px 15px 5px 15px;
+    border: 3px solid #242323;
+    padding: 5px 15px;
+    margin-bottom: 30px;
 }
 
-.index-section-button:visited {
+.index-article-button:visited {
     color: #242323;
 }
 
-.index-section-button:hover {
+.index-article-button:hover {
     background-color: #242323;
     color: white;
 }
 
-.index-section-img1 {
-    background-image: url("/images/tarte.jpeg");
-    background-repeat:no-repeat;
-    background-position: center;
-    height: 697px;
-}
-
-.index-section-img2 {
-    background-image: url("/images/cake-with-deco.jpeg");
-    background-repeat:no-repeat;
-    background-position: center;
-    height: 697px;
-}
-
-.index-section-img3 {
-    background-image: url("/images/home-baking.jpeg");
-    background-repeat:no-repeat;
-    background-position: center;
-    height: 697px;
+#index-article-image-2 {
+    order: 1;
 }
 
 .index-chezfang-flex {
@@ -182,6 +185,92 @@
     height: 460px;
 }
 
+@media screen and (min-width: 600px) {
+    /* .index-header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .index-header-img {
+        width: 50%;
+    }
+
+    .index-header-text {
+        width: 50%;
+    
+    } */
+    
+
+}
+
+@media screen and (min-width: 769px) {
+    .index-header {
+        display: flex;
+        flex-direction: row;
+        padding-top: 0;
+    }
+
+    .index-header-img {
+        flex: 45%;
+        max-width: 45%;
+    }
+
+    .index-header-text {
+        margin-left: 4vh;
+    }
+
+    .index-header-text h1 {
+        margin: 17vh 0 0.2vh 0;
+        font-size: 5em
+    }
+
+    .index-header-text p {
+        font-size: 3em;
+    }
+
+    .index-article {
+        flex-direction: row;
+    }
+
+    .index-article-column {
+        flex: 40%;
+        max-width: 40%;
+    }
+    
+    #index-article-image-2 {
+        order: 0;
+    }
+
+    .index-article-column {
+        margin-top: 0;
+    }
+
+    #footer-wrapper {
+        flex-direction: row;
+        padding: 130px 130px 0 130px;
+        justify-content: center;
+        /* align-items: center; */
+    }
+
+    .footer-column {
+        flex: 25%;
+        max-width: 25%;
+    }
+
+    #footer-wrapper span, #subscribe-label {
+        font-size: 2em;
+    }
+
+    #footer-wrapper p {
+        font-size: 1.5em;
+    }
+    
+    #copyright p {
+        font-size: 1em;
+    }
+    
+}
+
 /******************/
 /*      CAKE      */
 /******************/
@@ -190,6 +279,7 @@
     text-align: center;
     font-size: 40px;
 }
+
 @media screen and (min-width: 769px) {
     #main-form-create-cake {
         position: relative;
@@ -357,15 +447,6 @@
     display: flex;
 }
 
-.shop-zigzag {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 25px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-}
-
 .shop-flex-19{
     flex: 19%;
 }
@@ -434,6 +515,7 @@
 /********************/
 /*      RECIPE      */
 /********************/
+
 .header-recipe {
     background-color:#F9DB79 ;
 }
@@ -704,14 +786,7 @@
 .about {
     background: #FFBFB3 ;
 }
-.zigzag-pic{
-    text-align: center;
-}
-.zigzag-line {
-    width: 300px;
-    padding: 2rem 0;
-  }
-  
+
 .about-us {
     display: grid;
     grid-template-columns: 1fr 1fr ;
@@ -757,7 +832,7 @@
 /*********************/
 /*      CONTACT      */
 /*********************/
-#contact {
+#contact-header {
     background: #FBB1BD ;
     width: auto;
 }

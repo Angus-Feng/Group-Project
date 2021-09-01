@@ -8,75 +8,101 @@
     <title>Chez Feng | about us french</title>
     <!-- main css link -->
     <link rel="stylesheet" href="styles/base.css" />
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
     <div class="container">
       <!-- nav starts -->
-      <nav id="main-nav">
-        <ul class="uppercase">
-          <li><a href="shop.html">shop now</a></li>
-          <li><a href="create-your-cake.html">create your cake</a></li>
-          <li><a href="recipe.html">weekly recipe</a></li>
-          <li><a href="about.html">about us</a></li>
-          <li><a href="contact.html">contact us</a></li>
-        </ul>
+      <nav id="nav">
+        <div id="main-nav" class="hidden">
+          <ul class="uppercase" id="menu">
+            <li><a href="shop.html">Acheter maintenant</a></li>
+            <li><a href="create-your-cake.html">créez votre gâteau</a></li>
+            <li><a href="recipe.html">à propos de nous</a></li>
+            <li><a href="about.html">À PROPOS DE NOUS</a></li>
+            <li><a href="contact.html">Nous contacter</a></li>
+          </ul>
+          <ul id="languages">
+            <li><a href="#">EN</a></li>
+            <li>|</li>
+            <li><a href="#">FR</a></li>
+          </ul>
+        </div>
+        <div id="mobile-nav">
+          <p><a href="index.html">LOGO</a></p>
+          <i class="fas fa-bars"></i>
+        </div>
       </nav>
       <!-- nav ends -->
       <header class="about">
-          <h1 class="uppercase">À PROPOS DE NOUS</h1>
-          <p class="uppercase">NOTRE HISTOIRE</p>
+        <h1 class="uppercase">À PROPOS DE NOUS</h1>
+        <p class="uppercase">NOTRE HISTOIRE</p>
       </header>
-      <div class="zigzag-pic">
-        <img class="zigzag-line" src="images/black-zig-zag.png" alt="zig-zag-line">
-      </div>
+      <img class="zigzag-line" src="images/black-zig-zag.png" alt="zig-zag-line" />
       <!-- main start -->
       <main class="about-us">
-          <div class="store-picture">
-              <img class="store-img" src="/images/store-history.jpg" alt="image of store" title="image of store">
-          </div>
-          <div class="store-story">
-              <h4>Histoire de la boulangerie Chez Feng</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. 
-                  Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod no, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, 
-                  non fermentum diam nisl sit amet erat. Duis semper.</p>
-          </div>
-          <div class="owner-story">
-              <h4>Histoire du chef Feng</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. 
-                Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod no, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, 
-                non fermentum diam nisl sit amet erat. Duis semper.</p>
-          </div>
-          <div class="owner-picture">
-              <img class="owner-img" src="/images/owner-story.jpg" alt="image of owner" title="image of owner">
-          </div>
-        
+        <div class="store-picture">
+          <img
+            class="store-img"
+            src="/images/store-history.jpg"
+            alt="image of store"
+            title="image of store"
+          />
+        </div>
+        <div class="store-story">
+          <h4>Histoire de la boulangerie Chez Feng</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
+            risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing
+            nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas
+            ligula massa, varius a, semper congue, euismod no, mi. Proin
+            porttitor, orci nec nonummy molestie, enim est eleifend mi, non
+            fermentum diam nisl sit amet erat. Duis semper.
+          </p>
+        </div>
+        <div class="owner-story">
+          <h4>Histoire du chef Feng</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
+            risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing
+            nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas
+            ligula massa, varius a, semper congue, euismod no, mi. Proin
+            porttitor, orci nec nonummy molestie, enim est eleifend mi, non
+            fermentum diam nisl sit amet erat. Duis semper.
+          </p>
+        </div>
+        <div class="owner-picture">
+          <img
+            class="owner-img"
+            src="/images/owner-story.jpg"
+            alt="image of owner"
+            title="image of owner"
+          />
+        </div>
       </main>
-      <div class="zigzag-pic">
-        <img class="zigzag-line" src="images/black-zig-zag.png" alt="zig-zag-line">
-      </div>
+      <img class="zigzag-line" src="images/black-zig-zag.png" alt="zig-zag-line" />
       <!-- main ends -->
       <!-- footer starts -->
       <footer id="footer">
         <div id="footer-wrapper">
           <div id="address">
-            <span>Address</span>
+            <span>Adresse</span>
             <address>
               <p>
                 275 Rue Lakeshore Road<br />
                 Sainte-Anne-de-Bellevue<br />
-                QC H9X 3L9<br /> 
+                QC H9X 3L9<br />
               </p>
             </address>
           </div>
           <div id="hours">
-            <span>Hours</span>
+            <span>Les heures</span>
             <p>
-              Monday - Saturday : 7AM - 6PM<br />
-              Sunday : 7AM - 4PM
+              Lundi - Samedi : 7AM - 6PM<br />
+              Dimanche : 7AM - 4PM
             </p>
           </div>
-          <div id=contact>
+          <div id="contact">
             <span>Contact</span>
             <p>
               ActuallyIAmWebDev@ChezFeng.com<br />
@@ -84,9 +110,9 @@
             </p>
           </div>
           <div id="subscribe">
-            <span>Receive our weekly recipe!</span>
-            <input type="text" placeholder="Enter your email" />
-            <input class="uppercase" type="submit" value="subscribe" />
+            <span>Recevez notre recette hebdomadaire !</span>
+            <input type="text" placeholder="Entrer votre Email" />
+            <input class="uppercase" type="submit" value="s'abonner" />
             <div id="social-icons">
               <i class="fab fa-facebook-square">
                 <a href="#"></a>
@@ -100,7 +126,9 @@
           </div>
         </div>
         <div id="copyright">
-          <p>Copyright 2021 &copy; Created by team FEBM with love ❤️</p>
+          <p>
+            droits d'auteur 2021 &copy; Créé par l'équipe FEBM avec amour ❤️
+          </p>
         </div>
       </footer>
       <!-- footer ends -->
