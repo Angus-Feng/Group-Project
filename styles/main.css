@@ -127,6 +127,7 @@
 .index-chezfeng-header {
     text-align: center;
     font-size: 3vw;
+    margin-bottom: 2%;
 }
 
 .index-chezfang-img1 {
@@ -233,8 +234,8 @@
     }
 
     .index-article-column {
-        flex: 40%;
-        max-width: 40%;
+        flex: 50%;
+        max-width: 50%;
     }
     
     #index-article-image-2 {
