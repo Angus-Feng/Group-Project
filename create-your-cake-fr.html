@@ -6,22 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Bring your own creativity" />
     <meta name="author" content="Feng Han" />
-    <title>Chez Feng | Create your cake</title>
+    <title>Chez Feng | créez votre gâteau</title>
     <!-- main css link -->
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/main.css">
   </head>
   <body>
     <div class="container">
+      <div id="info-panel">
+        <p>275 Rue Lakeshore Road, Sainte-Anne-de-Bellevue, QC H9X 3L9</p>
+        <p><span class="hidden">|</span>Chaque Jour 7AM - 6PM</p>
+      </div>
       <!-- nav starts -->
-      <nav id="main-nav">
-        <ul class="uppercase">
-          <li><a href="shop.html">shop now</a></li>
-          <li><a href="create-your-cake.html">create your cake</a></li>
-          <li><a href="recipe.html">weekly recipe</a></li>
-          <li><a href="about.html">about us</a></li>
-          <li><a href="contact.html">contact us</a></li>
-        </ul>
+      <nav id="nav">
+        <div id="main-nav" class="hidden">
+          <p><a href="index.html" class="logo-left">CHEZ FENG.</a></p>
+          <ul class="uppercase" id="menu">
+            <li><a href="shop-fr.html">Achetez maintenant</a></li>
+            <li><a href="create-your-cake-fr.html">créez votre gâteau</a></li>
+            <li><a href="recipe-fr.html">recette de la semaine</a></li>
+            <li><a href="about-fr.html">à propos</a></li>
+            <li><a href="contact-fr.html">nous contacter</a></li>
+          </ul>
+          <ul id="languages">
+            <li><a href="create-your-cake.html">EN</a></li>
+            <li>|</li>
+            <li><a href="create-your-cake-fr.html">FR</a></li>
+          </ul>
+        </div>
+        <div id="mobile-nav">
+          <p><a href="index.html" class="logo-right">CHEZ FENG.</a></p>
+          <i class="fas fa-bars"></i>
+        </div>
       </nav>
       <!-- nav ends -->
       <header>
@@ -191,7 +207,7 @@
       <footer id="footer">
         <div id="footer-wrapper">
           <div id="address">
-            <span>Address</span>
+            <span>Adresse</span>
             <address>
               <p>
                 275 Rue Lakeshore Road<br />
@@ -201,10 +217,10 @@
             </address>
           </div>
           <div id="hours">
-            <span>Hours</span>
+            <span>Les heures</span>
             <p>
-              Monday - Saturday : 7AM - 6PM<br />
-              Sunday : 7AM - 4PM
+              Lundi - Samedi : 7AM - 6PM<br />
+              Dimanche : 7AM - 4PM
             </p>
           </div>
           <div id=contact>
@@ -215,7 +231,7 @@
             </p>
           </div>
           <div id="subscribe">
-            <span>Receive our weekly recipe!</span>
+            <span>Recevez notre recette de la semaine!</span>
             <input type="text" placeholder="Enter your email" />
             <input class="uppercase" type="submit" value="subscribe" />
             <div id="social-icons">
@@ -231,7 +247,7 @@
           </div>
         </div>
         <div id="copyright">
-          <p>Copyright 2021 &copy; Created by team FEBM with love ❤️</p>
+          <p>Copyright 2021 &copy; Créé par l'équipe FEBM avec amour ❤️</p>
         </div>
       </footer>
       <!-- footer ends -->
