@@ -167,10 +167,11 @@
             514 123 1234
           </p>
         </div>
-        <div id="subscribe">
-          <span>Receive our weekly recipe!</span>
-          <input type="text" placeholder="Enter your email" />
-          <input class="uppercase" type="submit" value="subscribe" />
+        <form id="subscribe" method="POST" action="#">
+          <label id="subscribe-label" for="email-address">Receive our weekly recipe!</label>
+          <input id="email-address" type="email" minlength="5"
+          maxlength="30"placeholder="Enter your email" />
+          <input id="subscribe-button" class="uppercase" type="submit" value="subscribe" />
           <div id="social-icons">
             <i class="fab fa-facebook-square">
               <a href="#"></a>
@@ -180,7 +181,7 @@
             </i>
             <i class="fab fa-twitter-square"></i>
             <a href="#"></a>
-          </div>
+          </form>
         </div>
       </div>
       <div id="copyright">
