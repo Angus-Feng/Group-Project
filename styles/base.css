@@ -20,6 +20,8 @@
 /* Khand */
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Khand&family=Teko&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Khand&display=swap');
+
 /************************/
 /*        GENERAL       */
 /************************/
@@ -39,7 +41,7 @@ a {
 
 .zigzag-line {
     display: block;
-    margin: 10vw auto;
+    margin: 5em auto;
     width: 15vw;
 }
 
@@ -59,22 +61,6 @@ body {
   margin: 0;
   font-family: "Oswald", sans-serif;
   color: #242323;
-}
-
-header {
-  /* width: 100%;
-  height: 433px;
-  background-color: #c3a9d4;
-  text-align: center; */
-}
-
-header > * {
-    color: #fff;
-}
-
-header p {
-  font-family: "Teko", "Open Sans";
-  /* font-size: 50px; */
 }
 
 /*********************/
@@ -129,11 +115,11 @@ ul#menu {
 }
 
 #languages li {
-    padding-right: 10px;
+    padding-right: 20px;
 }
 
 #mobile-nav {
-    width: 53%;
+    width: 60%;
     display: flex;
     height: 100%;
     margin-left: auto;
@@ -144,6 +130,85 @@ ul#menu {
 #mobile-nav i {
     font-size: 3em;
     margin-right: 10px;
+}
+
+.logo-left {
+    position: absolute;
+    top: 85px;
+    left: 10px;
+    font-size: 30px;
+    font-family: "Anton";
+    font-weight: bolder;
+}
+
+.logo-right {
+    font-size: 30px;
+    font-family: "Anton";
+    font-weight: bolder;
+    color:#242323;
+
+}
+
+/********************/
+/*      HEADER      */
+/********************/
+
+.colored-header {
+    width: 100%;
+    height: 480px; 
+    text-align: center; 
+}
+  
+.colored-header > * {
+    color: #fff;
+}
+  
+.colored-header h1 {
+    padding-top: 100px;
+    font-size: 150px;
+}
+
+.colored-header p {
+    font-family: "Teko", "Open Sans";
+    font-size: 50px;
+}
+  
+#about-header {
+  background-color: #FFBFB3;
+}
+#contact-header {
+    background-color: #FBB1BD;
+}
+
+#cake-header {
+    background-color: #C3A9D4;
+}
+
+#recipe-header {
+    background-color: #F9DB79;
+}
+
+#shop-header {
+    padding-top: 30px;
+    font-size: 80px;
+    color: #242323;
+    text-align: center;
+}
+
+@media screen and (max-width: 650px) {
+    .colored-header {
+        width: 100%;
+        height: 450px; 
+        text-align: center; 
+    }
+    
+    .colored-header h1 {
+        font-size: 25vw;
+    }
+    
+    .colored-header p {
+        font-size: 10vw;
+    }
 }
 
 /********************/

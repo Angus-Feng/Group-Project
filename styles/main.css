@@ -38,6 +38,7 @@
     text-align: left;
     /* min-height: 500px; */
     margin-left: 20px;
+    color: #fff;
 }
 
 .index-header-text h1 {
@@ -784,10 +785,6 @@
 /*      ABOUT      */
 /*******************/
 
-.about {
-    background: #FFBFB3 ;
-}
-
 .about-us {
     display: grid;
     grid-template-columns: 1fr 1fr ;
@@ -958,9 +955,7 @@
 /*******************/
 /*      ABOUT      */
 /*******************/
-.about h1{
-    font-size:5rem;
-}
+
 .about-us {
     display: grid;
     grid-template-columns: 1fr;
@@ -969,27 +964,31 @@
     row-gap: 1rem;
     padding: 2rem 2rem; */
 }
-.store-story h4{
+.store-story h1{
+    
     font-size: 2rem;
 }
 .store-story p{
+    font-family: 'Khand', sans-serif;
     font-size: 1.8rem;
 }
-.owner-story h4{
+.owner-story h1{
     font-size: 2rem;
 }
 .owner-story p{
+    font-family: 'Khand', sans-serif;
     font-size: 1.8rem;
 }
-    /*********************/
+
+/*********************/
 /*      CONTACT      */
 /*********************/
-    .contact {
+    /* .contact {
         width: 40rem;
     }
     #contact h1 {
         font-size:5rem;
-    }
+    } */
     .contact-form {
         padding: 0rem;
     }
@@ -1068,6 +1067,7 @@
 /*******************/
 /*      ABOUT      */
 /*******************/
+
 .about h1{
     font-size:5rem;
 }
@@ -1091,7 +1091,8 @@
 .owner-story p{
     font-size: 1rem;
 }
-      /*********************/
+
+/*********************/
 /*      CONTACT      */
 /*********************/
     .contact {
