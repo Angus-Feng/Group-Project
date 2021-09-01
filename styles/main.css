@@ -207,6 +207,29 @@
     .index-article-column {
         margin-top: 0;
     }
+
+    #footer-wrapper {
+        flex-direction: row;
+        padding: 130px 130px 0 130px;
+    }
+
+    .footer-column {
+        flex: 25%;
+        max-width: 25%;
+    }
+
+    #footer-wrapper span, #subscribe-label {
+        font-size: 2em;
+    }
+
+    #footer-wrapper p {
+        font-size: 1.5em;
+    }
+    
+    #copyright p {
+        font-size: 1em;
+    }
+    
 }
 
 /******************/
