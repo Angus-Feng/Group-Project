@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,43 +13,28 @@
   </head>
   <body>
     <div class="container">
-      <div id="info-panel">
-        <p>275 Rue Lakeshore Road, Sainte-Anne-de-Bellevue, QC H9X 3L9</p>
-        <p><span>|</span>Daily 7AM - 6PM</p>
-      </div>
       <!-- nav starts -->
-      <nav id="nav">
-        <div id="main-nav" class="hidden">
-          <ul class="uppercase" id="menu">
-            <li><a href="shop.html">shop now</a></li>
-            <li><a href="create-your-cake.html">create your cake</a></li>
-            <li><a href="recipe.html">weekly recipe</a></li>
-            <li><a href="about.html">about us</a></li>
-            <li><a href="contact.html">contact us</a></li>
-          </ul>
-          <ul id="languages">
-            <li><a href="#">EN</a></li>
-            <li>|</li>
-            <li><a href="#">FR</a></li>
-          </ul>
-        </div>
-        <div id="mobile-nav" class="hidden">
-          <p><a href="index.html">LOGO</a></p>
-          <i class="fas fa-bars"></i>
-        </div>
+      <nav id="main-nav">
+        <ul class="uppercase">
+          <li><a href="shop.html">shop now</a></li>
+          <li><a href="create-your-cake.html">create your cake</a></li>
+          <li><a href="recipe.html">weekly recipe</a></li>
+          <li><a href="about.html">about us</a></li>
+          <li><a href="contact.html">contact us</a></li>
+        </ul>
       </nav>
       <!-- nav ends -->
       <header>
         <h1 class="uppercase">CREATE YOUR CAKE</h1>
-        <P class="uppercase">BRING YOUR CREATIVITY</P>
+        <P class="uppercase">APPORTEZ VOTRE CRÉATIVITÉ</P>
       </header>
       <img class="index-zigzag" src="images/black-zig-zag.png" alt="Black zigzag." title="Black zigzag.">
       <!-- main start -->
       <main id="cake-main">
           <div id="slogan-cake">
-              <p>Select your ingredients <br>
-                Pick the decorations <br>
-                Create a cake of your own style</p>
+              <p>Sélectionnez vos ingrédients <br>
+                Choisissez les décorations <br>
+                Créez un gâteau de votre propre style</p>
           </div>
         <form id="create-your-cake-form" method="POST" action="/thank-you.html" autocomplete="on" autocapitalize="words">
             <fieldset id="main-form-create-cake">
@@ -57,13 +42,13 @@
                     <table>
                         <tr class="cake-form-title">
                           <td colspan="2">
-                            Cake Details
+                            Détails du gâteau
                           </td>
                         </tr>
                         <tr><br></tr>
                         <tr>
                             <td>
-                                <label for="weight">Weight(lb)</label>
+                                <label for="weight">le Poids(lb)</label>
                             </td>
                             <td>
                                 <input type="text" id="weight" name="weight" maxlength="4" autofocus required>
@@ -71,44 +56,44 @@
                         </tr>
                         <tr>
                             <td>
-                                <label for="flavor">Flavor</label>
+                                <label for="flavor">Saveur</label>
                             </td>
                             <td>
                                 <select name="Flavor" id="flavor" required>
-                                    <option value="vanila">Vanila</option>
-                                    <option value="chocolate">Chocolate</option>
-                                    <option value="pistachio">Pistachio</option>
-                                    <option value="strawberry">Strawberry</option>
-                                    <option value="salted-buttercream">Salted Buttercream</option>
+                                    <option value="vanila">Vanille</option>
+                                    <option value="chocolate">Chocolat</option>
+                                    <option value="pistachio">Pistache</option>
+                                    <option value="strawberry">Fraise</option>
+                                    <option value="salted-buttercream">Crème au beurre salée</option>
                                 </select>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <label for="extra-decors">Extra Decors</label>
+                                <label for="extra-decors">Décors supplémentaires</label>
                             </td>
                             <td id="decor">
                                 <input type="checkbox" id="decor1" value="berries">
-                                <label for="decor1">Berries</label><br>
+                                <label for="decor1">Baies</label><br>
                                 <input type="checkbox" id="decor2" value="choco-bar">
-                                <label for="decor2">Choco bar</label><br>
+                                <label for="decor2">Barre de choco</label><br>
                                 <input type="checkbox" id="decor3" value="macaron">
                                 <label for="decor3">Macaron</label><br>
                                 <input type="checkbox" id="decor4" value="flowers">
-                                <label for="decor4">Flowers</label><br>
+                                <label for="decor4">Fleurs</label><br>
                                 <input type="checkbox" id="decor5" value="sparcle-candies">
-                                <label for="decor5">Sparcle Candies</label><br>
+                                <label for="decor5">Bonbons scintillants</label><br>
                                 <input type="checkbox" id="decor6" value="ferrero-rocher">
                                 <label for="decor6">Ferrero Rocher</label><br>
                                 <input type="checkbox" id="decor7" value="birthday-candles">
-                                <label for="decor7">Birthday Candles</label><br>
+                                <label for="decor7">Bougies d'anniversaire</label><br>
                                 <input type="checkbox" id="decor8" value="paper-banner">
-                                <label for="decor8">Paper Banner</label>
+                                <label for="decor8">Bannière en papier</label>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <label for="comments">Comments&Allergies</label>
+                                <label for="comments">Commentaires&Allergies</label>
                             </td>
                             <td>
                                 <input type="text" id="comments" name="comments" maxlength="500">
@@ -120,13 +105,13 @@
                     <table>
                       <tr class="cake-form-title">
                         <td colspan="2">
-                          Contact Info
+                            Informations de contact
                         </td>
                       </tr>
                       <tr><br></tr>
                         <tr>
                             <td>
-                                <label for="full-name">Name</label>
+                                <label for="full-name">Nom</label>
                             </td>
                             <td>
                                 <input type="text" id="full-name" name="full-name" maxlength="50" required>
@@ -134,7 +119,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <label for="phone">Phone</label>
+                                <label for="phone">Téléphone</label>
                             </td>
                             <td>
                                 <input type="text" id="phone" name="phone" size="10" minlength="10" maxlength="10" required>
@@ -150,7 +135,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <label for="address">Address</label>
+                                <label for="address">Adresse</label>
                             </td>
                             <td>
                                 <input type="text" id="address" name="address" maxlength="50" required>
@@ -158,7 +143,7 @@
                         </tr>
                         <tr>
                             <td colspan="2">
-                                <label for="schedule">When to delivery/Pickup</label>
+                                <label for="schedule">Quand livrer/retrait</label>
                             </td>
                         </tr>
                         <tr>
@@ -169,19 +154,19 @@
                             <td></td>
                             <td>
                                 <input type="radio" id="delivery" name="deliv-type">
-                                <label for="delivery">Delivery</label>
+                                <label for="delivery">Livraison</label>
                             </td>
                         </tr>
                         <tr>
                             <td></td>
                             <td>
                                 <input type="radio" id="pickup" name="deliv-type">
-                                <label for="pickup">Pick up in store</label>
+                                <label for="pickup">Retrait en magasin</label>
                             </td>
                         </tr>
                         <tr>
                             <td colspan="2">
-                                <label for="sample-image">Uplaod your Sample Image(optional)</label>
+                                <label for="sample-image">Téléchargez votre exemple d'image (facultatif)</label>
                             </td>
                         </tr>
                         <tr>
