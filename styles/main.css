@@ -14,29 +14,17 @@
 
 .index-header {
     background-color: #B5E8D5;
-    /* display: flex;
-    flex-direction: column; */
-    /* display: grid; */
-    /* align-items: center; */
-    /* height: auto; */
     height: 68vh;
-    /* max-height: 792px; */
-    /* grid-template-columns: repeat(auto-fit, minmax(414px, 1fr)); */
-    /* grid-row-gap: 10px; */
-    /* height: 40rem; */
-    /* padding-top: 40px; */
     padding-top: 10%;
 }
 
 .index-header-img {
     width: 90%;
-    /* max-height: 596px; */
     margin-top: 4vw;
 }
 
 .index-header-text {
     text-align: left;
-    /* min-height: 500px; */
     margin-left: 20px;
     color: #fff;
 }
@@ -187,24 +175,6 @@
     height: 460px;
 }
 
-@media screen and (min-width: 600px) {
-    /* .index-header {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .index-header-img {
-        width: 50%;
-    }
-
-    .index-header-text {
-        width: 50%;
-    
-    } */
-    
-
-}
-
 @media screen and (min-width: 769px) {
     .index-header {
         display: flex;
@@ -251,7 +221,6 @@
         flex-direction: row;
         padding: 130px 130px 0 130px;
         justify-content: center;
-        /* align-items: center; */
     }
 
     .footer-column {
@@ -270,7 +239,6 @@
     #copyright p {
         font-size: 1em;
     }
-    
 }
 
 /******************/
@@ -280,6 +248,10 @@
 #slogan-cake {
     text-align: center;
     font-size: 40px;
+}
+
+#slogan-cake p {
+    margin-bottom: 100px;
 }
 
 @media screen and (min-width: 769px) {
@@ -428,14 +400,6 @@
 /******************/
 /*      SHOP      */
 /******************/
-/* .shop-header {
-    background-color: white;
-} */
-
-/*.shop-header-text {
-    font-size: 5.5vw;
-    color: #242323;
-}*/
 
 .shop-main {
     margin-bottom: 75px;
@@ -503,7 +467,6 @@
 .shop-temp {
     flex: 19%;
     margin-right: 20px;
-    margin-left: 20px;
 }
 
 .shop-white {
@@ -519,9 +482,9 @@
 /*      RECIPE      */
 /********************/
 
-.header-recipe {
+/* .header-recipe {
     background-color:#F9DB79 ;
-}
+} */
 
 @media screen and (min-width: 769px) {
     .recipe-main {
@@ -529,7 +492,7 @@
     }
 
     .nav-recipe {
-        border: thick solid black;
+        border: 3px solid black;
         position: relative;
         left: 10%;
         width: 80%;
@@ -601,7 +564,7 @@
     }
 
     .nav-recipe {
-        border: thick solid black;
+        border: 3px solid black;
         position: relative;
         width: 50%;
         left: 10%;
@@ -678,7 +641,7 @@
     }
 
     .nav-recipe {
-        border: thick solid black;
+        border: 3px solid black;
         position: relative;
         left: 10%;
         width: 80%;
@@ -741,7 +704,7 @@
 }
 
 .nav-recipe {
-    border: thick solid black;
+    border: 3px solid black;
     position: relative;
     left: 10%;
     width: 80%;
