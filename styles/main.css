@@ -282,13 +282,6 @@
         width: 260px;
         font-size: 20px;
     }
-
-    #submit-cake {
-        position: relative;
-        left: 45%;
-        font-size: 25px;
-        padding: 10px 60px;
-    }
 }
 
 #cake-details {
@@ -316,10 +309,11 @@
     height: 150px;
 }
 
-#submit-cake:hover {
-    color: #fff;
-    background-color: #000;
-}
+/* #submit-cake:hover {
+    color: #000;
+    background-color: #fff;
+    border: 3px solid #000;
+} */
 
 @media screen and (min-width: 415px) and (max-width: 768px) {
     #cake-main {
@@ -350,13 +344,6 @@
         height: 40px;
         width: 260px;
         font-size: 20px;
-    }
-
-    #submit-cake {
-        position: relative;
-        left: 35%;
-        font-size: 20px;
-        padding: 10px 60px;
     }
 }
 
@@ -390,13 +377,12 @@
         font-size: 20px;
     }
 
-    #submit-cake {
-        position: relative;
-        left: 10%;
-        font-size: 20px;
-        padding: 10px 60px;
-    }
 }
+#submit-cake {
+    display: flex;
+    justify-content: center;
+}
+
 /******************/
 /*      SHOP      */
 /******************/
@@ -482,9 +468,16 @@
 /*      RECIPE      */
 /********************/
 
-/* .header-recipe {
-    background-color:#F9DB79 ;
-} */
+#recipe-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+#recipe-button button {
+    width: 120%;
+}
 
 @media screen and (min-width: 769px) {
     .recipe-main {
@@ -543,19 +536,8 @@
         margin: 50px 70px 100px 70px;
     }
     
-    .ins-link {
-        position: relative;
-        width: 30%;
-        left: 33%;
-    }
-    
-    .ins-link button {
-        padding: 20px 30px;
-        font-size: 30px;
-        text-align: center;
-        background-color: #fff;
-    }
 }
+
 
 @media screen and (min-width: 415px) and (max-width: 768px) {
     .recipe-main {
@@ -618,20 +600,6 @@
     .ingredient-list {
         margin: 50px 100px 100px 70px;
     }
-    
-    .ins-link {
-        position: relative;
-        width: 30%;
-        left: 35%;
-    }
-    
-    .ins-link button {
-        padding: 20px 30px;
-        font-size: 20px;
-        font-weight: bold;
-        text-align: center;
-        background-color: #fff;
-    }
 }
 
 @media screen and (max-width: 414px) {
@@ -688,19 +656,6 @@
     .ingredient-list {
         margin: 50px 70px 100px 70px;
     }
-    
-    .ins-link {
-        position: relative;
-        width: 20%;
-        left: 23%;
-    }
-    
-    .ins-link button {
-        padding: 20px 30px;
-        font-size: 20px;
-        text-align: center;
-        background-color: #fff;
-    }
 }
 
 .nav-recipe {
@@ -740,9 +695,10 @@
     background-color: #FCEDBB;
 }
 
-.ins-link button:hover {
-    color: #fff;
-    background-color: #000;
+#recipe-button button:hover {
+    color: #000;
+    border: 3px solid #000;
+    background-color: #fff
 }
 
 /*******************/
@@ -836,12 +792,15 @@
 #input-full-name{
     width: 37.3rem ;
 }
-.button{
-    text-align: center;
+#contact-submit-button {
+    display: flex;
+    justify-content: center;
 }
-.submit_botton {
-    font-size: 2.25rem;
+
+#contact-submit-button [type="submit"] {
+    margin-top: 15px;
 }
+
 .opening-address {
     text-align: left;
     padding:  4rem 0 0 4rem;

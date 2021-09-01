@@ -53,6 +53,16 @@ a {
     display: none;
 }
 
+.button {
+    height: 46px;
+    font-size: 1.5em;
+    font-family: "Oswald", sans-serif;
+    background-color: #242323;
+    border: 2px solid #fff;
+    color: #fff;
+    width: 300px;
+}
+
 /************************/
 /*         BODY         */
 /************************/
@@ -269,14 +279,14 @@ ul#menu {
     height: 40px;
 }
 
-#subscribe input[type=submit] {
+/* #subscribe input[type=submit] {
     height: 46px;
     font-size: 1.5em;
     font-family: "Oswald", sans-serif;
     background-color: #242323;
     border: 2px solid #fff;
     color: #fff;
-}
+} */
 
 #social-icons {
   display: flex;
