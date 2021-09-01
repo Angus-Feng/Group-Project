@@ -25,23 +25,46 @@
 /*************************/
 
 /* CSS Rules for Mobile Device */
-@media screen and (max-width: 400px) {
-  /* your code goes here */
+@media screen and (max-width: 414px) {
+    #info-panel {
+        flex-wrap: wrap;
+    }
+    
+    #info-panel span {
+        display: none;
+    }
+
+    #mobile-nav {
+        display: flex;
+    }
 }
 
 /* CSS Rules for Tablet Device */
-@media screen and (min-width: 401px) and (max-width: 768) {
-  /* your code goes here */
+@media screen and (min-width: 415px) and (max-width: 768) {
+    #mobile-nav {
+        display: none;
+    }
 }
-
+  
 /* CSS Rules for Desktop Device */
 @media screen and (min-width: 769px) {
-  /* your code goes here */
+    #mobile-nav {
+        display: none;
+    }
 }
 
 /************************/
 /*        GENERAL       */
 /************************/
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
 
 .zigzag-line {
   width: 300px;
@@ -49,6 +72,10 @@
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.hidden {
+    display: none;
 }
 
 /************************/
@@ -71,7 +98,8 @@ header {
 header h1 {
   margin: 0;
   font-family: "Anton", sans-serif;
-  font-size: 150px;
+  /* font-size: 150px; */
+  font-size: 11.7vw;
   color: #fff;
   padding-top: 87px;
 }
@@ -84,30 +112,39 @@ header p {
 }
 
 /*********************/
-/*     INFO PNEL     */
+/*     INFO PANEL    */
 /*********************/
 
 #info-panel {
-  width: 100%;
-  height: 69px;
-  background-color: #242323;
-  color: #fff;
-  text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 69px;
+    background-color: #242323;
+    color: #fff;
 }
 
 #info-panel p {
-  margin: 0;
-  font-size: 20px;
-  padding-top: 18px;
+    font-size: 1rem;
+    /* padding-top: 18px; */
+}
+
+#infor-panel span {
+    /* padding: 0 10px; */
 }
 
 /*********************/
 /*      NAV BAR      */
 /*********************/
 
+/* #nav {
+    width: 100%;
+} */
+
 #main-nav {
-    /* width: 100%; */
-    display: flex;
+    /* display: flex; */
+    /* display: none; */
 }
 
 #main-nav ul {
@@ -124,7 +161,6 @@ ul#menu {
 
 #main-nav a {
   font-size: 24px;
-  text-decoration: none;
   color: #242323;
 }
 
@@ -135,6 +171,19 @@ ul#languages {
 
 #languages li {
     padding-right: 10px;
+}
+
+#mobile-nav {
+    width: 53%;
+    height: 40px;
+    margin-left: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#mobile-nav i {
+    font-size: 25px;
+    margin-right: 5px;
 }
 
 /********************/
