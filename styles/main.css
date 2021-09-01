@@ -37,13 +37,7 @@
 }
 
 .index-header-text h1 {
-    font-size: 4.5vh;
-}
-
-@media screen and (min-width: 769px) {
-    .index-header-text h1 {
-        font-size: 5vw;
-    }
+    font-size: 5vw;
 }
 
 .index-header-text p {
@@ -52,70 +46,75 @@
 
 .index-zigzag {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 25px;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    margin: 10vw auto;
+    width: 15vw;
 }
 
-.index-section-description {
+.index-article {
     display: flex;
-    height: 697px;
-}
-
-.index-section-description-flex {
-    /* flex: 50%; */
+    flex-direction: column;
     text-align: center;
 }
 
-.index-section-headers {
-    display: inline-flex;
-    border-bottom: solid #242323;
-    padding-bottom: 15px;
-    margin-top: 15%;
-    margin-bottom: 12%;
+.index-article-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 50px;
+    flex: 100%;
+    max-width: 100%;
+    margin-top: 50px;
 }
 
-.index-section-paragraph {
-    margin-bottom: 8%;
+.index-article img {
+    width: 100%;
+    height: auto;
 }
 
-.index-section-button {
+.index-article-header {
+    border-bottom: solid 4px #242323;
+    padding-bottom: 10px;
+    font-size: 2.5em;
+}
+
+#index-article-header-1 {
+    width: 6.5em;
+}
+
+#index-article-header-2 {
+    width: 8em;
+}
+
+#index-article-header-3 {
+    width: 7em;
+}
+
+.index-article-paragraph {
+    font-size: 1.5em;
+    width: 70%;
+}
+
+.index-article-button {
+    font-size: 1.5em;
     color: #242323;
     text-decoration: none;
-    border: 2px solid #242323 !important;
-    padding: 5px 15px 5px 15px;
+    border: 3px solid #242323;
+    padding: 5px 15px;
+    margin-bottom: 30px;
 }
 
-.index-section-button:visited {
+.index-article-button:visited {
     color: #242323;
 }
 
-.index-section-button:hover {
+.index-article-button:hover {
     background-color: #242323;
     color: white;
 }
 
-.index-section-img1 {
-    background-image: url("/images/tarte.jpeg");
-    background-repeat:no-repeat;
-    background-position: center;
-    height: 697px;
-}
-
-.index-section-img2 {
-    background-image: url("/images/cake-with-deco.jpeg");
-    background-repeat:no-repeat;
-    background-position: center;
-    height: 697px;
-}
-
-.index-section-img3 {
-    background-image: url("/images/home-baking.jpeg");
-    background-repeat:no-repeat;
-    background-position: center;
-    height: 697px;
+#index-article-image-2 {
+    order: 1;
 }
 
 .index-chezfang-flex {
@@ -187,6 +186,29 @@
     height: 460px;
 }
 
+@media screen and (min-width: 769px) {
+    .index-header-text h1 {
+        font-size: 5vw;
+    }
+
+    .index-article {
+        flex-direction: row;
+    }
+
+    .index-article-column {
+        flex: 50%;
+        max-width: 50%;
+    }
+    
+    #index-article-image-2 {
+        order: 0;
+    }
+
+    .index-article-column {
+        margin-top: 0;
+    }
+}
+
 /******************/
 /*      CAKE      */
 /******************/
@@ -195,6 +217,7 @@
     text-align: center;
     font-size: 40px;
 }
+
 @media screen and (min-width: 769px) {
     #main-form-create-cake {
         position: relative;
@@ -439,6 +462,7 @@
 /********************/
 /*      RECIPE      */
 /********************/
+
 .header-recipe {
     background-color:#F9DB79 ;
 }
