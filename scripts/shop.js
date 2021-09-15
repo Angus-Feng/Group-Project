@@ -59,6 +59,7 @@ const bakeryItems = [
 
 window.onload = e => {
   
+  // loop through the bakery items then display 
   const displayItems = items => {
     const itemList = document.getElementById('item-list');
     
@@ -73,11 +74,28 @@ window.onload = e => {
           <p>$${item.price}</p>
           </div>
         </div>
-      `)
-    });
+      `);
+    }).join('');
 
     itemList.innerHTML = itemHtml;
   }
   
   displayItems(bakeryItems);
+
+  // search bar 
+  const searchBox = document.getElementById('search-box');
+  
+  searchBox.addEventListener('keyup', e => {
+
+    // get input values from the search box
+    const searchVal = e.target.value.toLowerCase();
+    
+    // filter item with the search value
+    const filteredItems = bakeryItems.filter(item => {
+      return item.title.toLowerCase().includes(searchVal);
+    });
+
+    displayItems(filteredItems);
+  });
+
 }
