@@ -40,7 +40,7 @@ const bakeryItems = [
     id: 4,
     type: "cakes",
     imgUrl: "../images/blueberry-cream.jpeg",
-    title: "blue berry walnut cream",
+    title: "blueberry walnut",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum numquam magni sed voluptas delenitiomnis quod amet. Enim cum blanditiis eligendi numquam ullam dolorem accusantium optio vitae perferendis iste. Dolorum.",
     portion: "3-4",
     price: 35
@@ -61,19 +61,17 @@ window.onload = e => {
   
   // loop through the bakery items then display 
   const displayItems = items => {
-    const itemList = document.getElementById('item-list');
+    const itemList = document.getElementById('shop-item-list');
     
     const itemHtml = items.map(item => {
       return (`
-        <article class="shop-flex-27">
-          <div class="shop-product-border">
-            <img class="shop-img" src="${item.imgUrl}">
-            <div class="shop-product-adjusting">
-              <h2 class="shop-product-header uppercase">${item.title}</h2>
-              <p>${item.description}</p>
-              <p>${item.portion} PEOPLE</p>
-              <p>$${item.price}</p>
-            </div>
+        <article class="display-flex shop-product-border">
+          <img class="shop-img" src="${item.imgUrl}">
+          <div class="shop-product-adjusting">
+            <h2 class="shop-product-header uppercase">${item.title}</h2>
+            <p>${item.description}</p>
+            <p>${item.portion} PEOPLE</p>
+            <p>$${item.price}</p>
           </div>
         </article>
       `);
@@ -84,8 +82,8 @@ window.onload = e => {
   
   displayItems(bakeryItems);
 
-  // search bar 
-  const searchBox = document.getElementById('search-box');
+  // add event listener on serach box 
+  const searchBox = document.getElementById('shop-search-box');
   
   searchBox.addEventListener('keyup', e => {
 
@@ -99,4 +97,10 @@ window.onload = e => {
 
     displayItems(filteredItems);
   });
+
+  // add event listener on search button
+  const button = document.getElementById('shop-search-button');
+
+  button.addEventListener('click', e => {})
+
 }

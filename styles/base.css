@@ -48,7 +48,7 @@ a {
 .zigzag-line {
     display: block;
     margin: 5em auto;
-    width: 15vw;
+    width: 20em
 }
 
 .uppercase {
@@ -67,6 +67,10 @@ a {
     border: 2px solid #fff;
     color: #fff;
     width: 300px;
+}
+
+.display-flex {
+    display: flex;
 }
 
 /************************/
