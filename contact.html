@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- favicon -->
     <link rel="shourtcut icon" type="image/png" href="images/cupcake.png" />
+    <script src="scripts/contact.js" defer></script>
   </head>
   <body>
     <div class="container">
@@ -66,22 +67,22 @@
                               
                               <div>
                                 <p class="c-topic">Topic</p>
-                                <select id="c-topic-choice">
-                                  <option value="Please choose one option">Please choose one option</option>
-                                  <option value="order_status">Order Status</option>
+                                <select id="topic">
+                                  <option value="0">Please choose one option</option>
+                                  <option value="order status">Order Status</option>
                                   <option value="quality">Quality</option>
                                   <option value="shipping">Shipping</option>
-                                  <option value="store_experience">Store Experience</option>
+                                  <option value="store experience">Store Experience</option>
                                   <option value="other">Other</option>
                                 </select>
                               </div>
                       
                               <p class="c-message">Message</p>
-                              <textarea class="feedback" ></textarea>
+                              <textarea id="feedback" class="feedback" ></textarea>
                             </div>
                         
                             <div id="contact-submit-button">
-                              <input type="submit" class="button" value="Submit" />
+                              <input type="submit" id="btnSubmit" class="button" value="Submit" />
                             </div> 
                           </div>
                    
@@ -157,5 +158,10 @@
     </footer>
     <!-- footer ends -->
     </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', ()=>{
+            document.getElementById('btnSubmit').addEventListener('click', addMessage);
+        });
+    </script>
   </body>
 </html>
