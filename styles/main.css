@@ -386,41 +386,45 @@
 /******************/
 /*      SHOP      */
 /******************/
+}
+/* @media screen and (max-width: 414px) { */
+
+/******************/
+/*      SHOP      */
+/******************/
 
 .shop-main {
-    margin-bottom: 75px;
+    /* margin-left: 5%;
+    margin-bottom: 75px; */
 }
 
-.shop-products-top-row {
+.shop-responsive, .shop-flex-19, .shop-flex-27 {
     display: flex;
+    /* flex-wrap: wrap; */
+    /* flex-direction: column; */
 }
 
-.shop-products-bottom-row {
-    display: flex;
+.shop-temp {
+    /* flex: 19%;
+    margin-right: 20px; */
 }
 
-.shop-flex-19{
-    flex: 19%;
-}
-
-.shop-products-section {
-    flex: 81%;
-}
-
-.shop-flex-27 {
-    flex: 27%;
+.shop-flex-19 {
+    flex: 100%;
+    justify-content: center;
 }
 
 .shop-product-ul {
+    text-align: center;
+    /* padding-right: 60px; */
     list-style-type: none;
 }
-
+  
 .shop-product-li {
-    text-decoration: none;
+    font-size: 40px;
     color: #242323;
-    font-size: 2vw;
 }
-
+  
 .shop-product-li:hover {
     text-decoration: underline;
 }
@@ -428,32 +432,81 @@
 .shop-product-li:visited {
     color: #242323;
 }
-
-.shop-img {
-    width: 95%;
-    height: 457px;
+  
+#search-container {
+    position: relative;
+    margin: 5% auto;
+    max-width: 300px;
+    font-size: 18px;
 }
 
-.shop-product-header {
-    margin-top: 0px;
+#search-box {
+    height: 50px;
+    padding-left: 10px;
+}
+
+#search-button {
+    position: absolute;
+    border: none;
+    background-color: #000;
+    cursor: pointer;
+    padding: 15px;
+}
+
+#search-button i {
+    font-size: 25px;
+    color: #fff;
+}
+
+.shop-flex-27 {
+    flex-direction: column;
+}
+
+article.shop-flex-27 {
+    max-width: 446px;
+    margin-bottom: 10%;
+}
+
+#item-list {
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.shop-img {
+    width: 440px;
+    height: auto;
 }
 
 .shop-product-border {
-    border-right: 2px solid #242323;
-    border-left: 2px solid #242323;
-    border-bottom: 2px solid #242323;
+    border: 3px solid #242323;
 }
 
 .shop-product-adjusting {
-    margin-bottom: 5%;
-    margin-right: 5%;
     padding: 20px;
 }
 
-.shop-temp {
-    flex: 19%;
-    margin-right: 20px;
+.shop-product-header {
+    font-size: 2em;
+    padding-bottom: 10px;
 }
+
+.shop-product-adjusting p:first-of-type {
+    font-size: 1.4em;
+    font-family: Khand, arial;
+    padding-bottom: 10px;
+}
+
+.shop-product-adjusting p:nth-of-type(2n) {
+    font-family: Teko, arial;
+    font-size: 2em;
+}
+
+.shop-product-adjusting p:last-of-type {
+    font-family: Teko, arial;
+    font-size: 2.2em;
+}
+
+/* @media screen and (min-width: 415px) and (max-width: 768px) { */
 
 .shop-white {
     color: white;
@@ -462,7 +515,7 @@
 
 .shop-white::selection {
     color: white;
-}
+} */
 
 /********************/
 /*      RECIPE      */
@@ -838,42 +891,6 @@
         padding: 2rem 0rem;
     }
 }
-@media screen and (min-width: 415px) and (max-width: 768px) {
-/******************/
-/*      SHOP      */
-/******************/
-.shop-responsive {
-    display: flex;
-}
-
-.shop-main {
-    margin-left: 5%;
-}
-
-.shop-products-top-row {
-    display: inline;
-}
-
-.shop-products-bottom-row {
-    display: inline;
-}
-
-.shop-flex-19 {
-    flex: 100%;
-}
-
-.shop-flex-27 {
-    flex: 100%;
-}
-
-.shop-product-ul {
-    text-align: center;
-    padding-right: 60px;
-}
-
-.shop-product-li {
-    font-size: 3.5vw;
-}
 
 /*******************/
 /*      ABOUT      */
@@ -949,78 +966,7 @@
         width: 20rem;
         height: 120px;
     }
-  }
-  /* @media screen and (max-width: 414px) { */
-
-/******************/
-/*      SHOP      */
-/******************/
-
-#search-container {
-    position: relative;
-    margin: 5% auto;
-    max-width: 300px;
-    font-size: 18px;
-}
-
-#search-box {
-    height: 40px;
-    padding-left: 10px;
-}
-
-#search-button {
-    position: absolute;
-    border: none;
-    background-color: #000;
-    cursor: pointer;
-    padding: 13px;
-}
-
-#search-button i {
-    font-size: 20px;
-    color: #fff;
-}
-
-#shop-item-wrapper {
-    /* margin-top: 10%; */
-}
-
-.shop-responsive {
-    display: flex;
-}
-
-.shop-flex-19 {
-    /* flex: 100%; */
-    display: flex;
-    justify-content: center;
-}
-
-.shop-main {
-    margin-left: 5%;
-}
-
-.shop-products-top-row {
-    display: inline;
-}
-
-.shop-products-bottom-row {
-    display: inline;
-}
-
-
-.shop-flex-27 {
-    flex: 100%;
-}
-
-.shop-product-ul {
-    text-align: center;
-    padding-right: 60px;
-}
-
-.shop-product-li {
-    font-size: 3.5vw;
-}
-
+  
 /*******************/
 /*      ABOUT      */
 /*******************/

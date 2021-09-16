@@ -65,15 +65,17 @@ window.onload = e => {
     
     const itemHtml = items.map(item => {
       return (`
-        <div class="shop-flex-27">
-        <img class="shop-img" src="${item.imgUrl}">
-          <div class="shop-product-adjusting shop-product-border">
-          <h3 class="shop-product-header uppercase">${item.title}</h3>
-          <p>${item.description}</p>
-          <p>${item.portion} PEOPLE</p>
-          <p>$${item.price}</p>
+        <article class="shop-flex-27">
+          <div class="shop-product-border">
+            <img class="shop-img" src="${item.imgUrl}">
+            <div class="shop-product-adjusting">
+              <h2 class="shop-product-header uppercase">${item.title}</h2>
+              <p>${item.description}</p>
+              <p>${item.portion} PEOPLE</p>
+              <p>$${item.price}</p>
+            </div>
           </div>
-        </div>
+        </article>
       `);
     }).join('');
 
@@ -97,5 +99,4 @@ window.onload = e => {
 
     displayItems(filteredItems);
   });
-
 }
