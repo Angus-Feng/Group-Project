@@ -9,6 +9,11 @@
     <title>Chez Feng | Create your cake</title>
     <!-- main css link -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/jquery-ui.css">
+    <!-- JS & JQuery links -->
+    <script src="scripts/JQuery3.6.js"></script>
+    <script src="scripts/jquery-ui.js"></script>
+    <script src="scripts/create-your-cake.js"></script>
     <!-- favicon -->
     <link rel="shourtcut icon" type="image/png" href="images/cupcake.png" />
   </head>
@@ -189,9 +194,12 @@
                         <tr>
                           <td></td>
                             <td>
-                                <input type="text" id="sample-image" name="sample-image">
+                                <input type="file" accept="image/*" id="sample-image" name="sample-image" onchange="loadFile(event)">
                             </td>
                         </tr>
+                        <div id="sample-row">
+                          <img id="sample-img" width="auto" height="150px">
+                        </div>
                     </table>
                 </fieldset>
             </fieldset>

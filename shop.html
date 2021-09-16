@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="styles/main.css" />
   <!-- favicon -->
   <link rel="shourtcut icon" type="image/png" href="images/cupcake.png" />
+  <!-- js file -->
+  <script src="scripts/shop.js"></script>
 </head>
 <body>
   <div class="container">
@@ -46,102 +48,26 @@
     <img class="zigzag-line" src="images/black-zig-zag.png" alt="zig-zag-line" />
     <!-- main start -->
     <main class="shop-main">
-      <section class="shop-products-top-row">
-        <div class="shop-responsive shop-temp">
-          <section class="shop-flex-19">
+      <section class="shop-container display-flex">
+        <div class="shop-products-top-row display-flex">
+          <aside class="display-flex shop-nav">
             <ul class="shop-product-ul">
               <li><a class="shop-product-li uppercase" href="#">Everything</a></li>
               <li><a class="shop-product-li uppercase" href="#">Cakes</a></li>
               <li><a class="shop-product-li uppercase" href="#">Cookies</a></li>
               <li><a class="shop-product-li uppercase" href="#">Pastries</a></li>
             </ul>
-          </section>
-        </div>
-        <div class="shop-responsive">
-          <div class="shop-flex-27">
-            <img class="shop-img" src="images/blackberry-cake.jpeg">
-            <div class="shop-product-adjusting shop-product-border">
-              <h3 class="shop-product-header uppercase">Vanila Black Berry</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum numquam magni sed voluptas deleniti
-                omnis quod amet. Enim cum blanditiis eligendi numquam ullam dolorem accusantium optio vitae perferendis
-                iste. Dolorum.</p>
-              <p>4-6 PEOPLE</p>
-              <p><b>$40</b></p>
-            </div>
+          </aside>
+          <div id="shop-search-container">
+            <form action="#" method="get">
+              <input type="text" id="shop-search-box">
+              <button type="submit" id="shop-search-button" onclick="">
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
           </div>
         </div>
-        <div class="shop-responsive">
-          <div class="shop-flex-27">
-            <img class="shop-img" src="images/rasberry.jpeg">
-            <div class="shop-product-adjusting shop-product-border">
-              <h3 class="shop-product-header uppercase">Berry Festival</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum numquam magni sed voluptas deleniti
-                omnis quod amet. Enim cum blanditiis eligendi numquam ullam dolorem accusantium optio vitae perferendis
-                iste. Dolorum.</p>
-              <p>3-4 PEOPLE</p>
-              <p><b>$30</b></p>
-            </div>
-          </div>
-        </div>
-        <div class="shop-responsive">
-          <div class="shop-flex-27">
-            <img class="shop-img" src="images/chocolate-moka-cream.jpeg">
-            <div class="shop-product-adjusting shop-product-border">
-              <h3 class="shop-product-header uppercase">Chocolate Moka Cream</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum numquam magni sed voluptas deleniti
-                omnis quod amet. Enim cum blanditiis eligendi numquam ullam dolorem accusantium optio vitae perferendis
-                iste. Dolorum.</p>
-              <p>4-6 PEOPLE</p>
-              <p><b>$40</b></p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="shop-products-bottom-row">
-        <section class="shop-flex-19 shop-temp">
-          <ul class="shop-product-ul">
-            <li class="shop-product-li uppercase shop-white">Everything</li>
-          </ul>
-        </section>
-        <div class="shop-responsive">
-          <div class="shop-flex-27">
-            <img class="shop-img" src="images/oreo-chocolate.jpeg">
-            <div class="shop-product-adjusting shop-product-border">
-              <h3 class="shop-product-header uppercase">Oreo Chocolate</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum numquam magni sed voluptas deleniti
-                omnis quod amet. Enim cum blanditiis eligendi numquam ullam dolorem accusantium optio vitae perferendis
-                iste. Dolorum.</p>
-              <p>3-4 PEOPLE</p>
-              <p><b>$30</b></p>
-            </div>
-          </div>
-        </div>
-        <div class="shop-responsive">
-          <div class="shop-flex-27">
-            <img class="shop-img" src="images/blueberry-cream.jpeg">
-            <div class="shop-product-adjusting shop-product-border">
-              <h3 class="shop-product-header uppercase">Blue Berry Walnut Cream</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum numquam magni sed voluptas deleniti
-                omnis quod amet. Enim cum blanditiis eligendi numquam ullam dolorem accusantium optio vitae perferendis
-                iste. Dolorum.</p>
-              <p>3-4 PEOPLE</p>
-              <p><b>$35</b></p>
-            </div>
-          </div>
-        </div>
-        <div class="shop-responsive">
-          <div class="shop-flex-27">
-            <img class="shop-img" src="images/cocoa-cheese.jpeg">
-            <div class="shop-product-adjusting shop-product-border">
-              <h3 class="shop-product-header uppercase">Cocoa Cheese</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum numquam magni sed voluptas deleniti
-                omnis quod amet. Enim cum blanditiis eligendi numquam ullam dolorem accusantium optio vitae perferendis
-                iste. Dolorum.</p>
-              <p>4-6 PEOPLE</p>
-              <p><b>$40</b></p>
-            </div>
-          </div>
-        </div>
+        <div class="display-flex" id="shop-item-list"></div>
       </section>
     </main>
     <!-- main ends -->
