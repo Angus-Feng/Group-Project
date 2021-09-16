@@ -887,14 +887,14 @@ article.shop-product-border {
     width: 600px;
 	height: 120px;
 }
-
+}
 @media screen and (min-width: 769px) {
 /*******************/
 /*      ABOUT      */
 /*******************/
 
 
-    /*********************/
+/*********************/
 /*      CONTACT      */
 /*********************/
     .contact-form {
@@ -912,29 +912,30 @@ article.shop-product-border {
 /*      ABOUT      */
 /*******************/
 
-.about-us {
-    display: grid;
-    grid-template-columns: 1fr;
-    /* grid-template-rows: 1fr 1fr; 
-    column-gap: 2rem;
-    row-gap: 1rem;
-    padding: 2rem 2rem; */
-}
-.store-story h1{
-    
-    font-size: 2rem;
-}
-.store-story p{
-    font-family: 'Khand', sans-serif;
-    font-size: 1.8rem;
-}
-.owner-story h1{
-    font-size: 2rem;
-}
-.owner-story p{
-    font-family: 'Khand', sans-serif;
-    font-size: 1.8rem;
-}
+@media screen and (min-width: 415px) and (max-width: 768px) {
+    .about-us {
+        display: grid;
+        grid-template-columns: 1fr;
+        /* grid-template-rows: 1fr 1fr; 
+        column-gap: 2rem;
+        row-gap: 1rem;
+        padding: 2rem 2rem; */
+    }
+    .store-story h1{
+        
+        font-size: 2rem;
+    }
+    .store-story p{
+        font-family: 'Khand', sans-serif;
+        font-size: 1.8rem;
+    }
+    .owner-story h1{
+        font-size: 2rem;
+    }
+    .owner-story p{
+        font-family: 'Khand', sans-serif;
+        font-size: 1.8rem;
+    }
 
 /*********************/
 /*      CONTACT      */
@@ -982,34 +983,35 @@ article.shop-product-border {
         width: 20rem;
         height: 120px;
     }
-  
+} 
 /*******************/
 /*      ABOUT      */
 /*******************/
 
-.about h1{
-    font-size:5rem;
-}
-.about-us {
-    display: grid;
-    grid-template-columns: 1fr;
-    /* grid-template-rows: 1fr 1fr; 
-    column-gap: 2rem;
-    row-gap: 1rem;
-    padding: 2rem 2rem; */
-}
-.store-story h4{
-    font-size: 1.2rem;
-}
-.store-story p{
-    font-size: 1rem;
-}
-.owner-story h4{
-    font-size: 1.2rem;
-}
-.owner-story p{
-    font-size: 1rem;
-}
+@media screen and (max-width: 414px) {
+    .about h1{
+        font-size:5rem;
+    }
+    .about-us {
+        display: grid;
+        grid-template-columns: 1fr;
+        /* grid-template-rows: 1fr 1fr; 
+        column-gap: 2rem;
+        row-gap: 1rem;
+        padding: 2rem 2rem; */
+    }
+    .store-story h4{
+        font-size: 1.2rem;
+    }
+    .store-story p{
+        font-size: 1rem;
+    }
+    .owner-story h4{
+        font-size: 1.2rem;
+    }
+    .owner-story p{
+        font-size: 1rem;
+    }
 
 /*********************/
 /*      CONTACT      */
@@ -1061,4 +1063,4 @@ article.shop-product-border {
         width: 18rem;
         height: 13rem;
     }
-  }
+}
