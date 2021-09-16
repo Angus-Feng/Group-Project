@@ -51,12 +51,6 @@
       <section class="shop-products-top-row">
         <div class="shop-responsive shop-temp">
           <section class="shop-flex-19">
-            <div id="search-container">
-              <form action="#">
-                <input type="text" id="search-box">
-                <button type="submit">Search</button>
-              </form>
-            </div>
             <ul class="shop-product-ul">
               <li><a class="shop-product-li uppercase" href="#">Everything</a></li>
               <li><a class="shop-product-li uppercase" href="#">Cakes</a></li>
@@ -65,7 +59,17 @@
             </ul>
           </section>
         </div>
-        <article class="shop-responsive" id="item-list"></article>
+        <div id="search-container">
+          <form action="#">
+            <input type="text" id="search-box">
+            <button type="submit" id="search-button">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+        <div id="shop-item-wrapper">
+          <article class="shop-responsive" id="item-list"></article>
+        </div>
       </section>
     </main>
     <!-- main ends -->
