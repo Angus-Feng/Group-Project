@@ -22,6 +22,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Khand&display=swap');
 
+/*******************************/
+/* IMPORTING FONT AWESOME LINK */
+/*******************************/
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css');
+
 /************************/
 /*        GENERAL       */
 /************************/
@@ -42,7 +48,7 @@ a {
 .zigzag-line {
     display: block;
     margin: 5em auto;
-    width: 15vw;
+    width: 20em
 }
 
 .uppercase {
@@ -61,6 +67,10 @@ a {
     border: 2px solid #fff;
     color: #fff;
     width: 300px;
+}
+
+.display-flex {
+    display: flex;
 }
 
 /************************/
