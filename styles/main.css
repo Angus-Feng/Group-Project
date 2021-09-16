@@ -383,6 +383,16 @@
     justify-content: center;
 }
 
+#sample-row {
+    position: absolute;
+    bottom: 0px;
+}
+
+#sample-row img {
+    position: relative;
+    left: 60%;
+}
+
 /******************/
 /*      SHOP      */
 /******************/
