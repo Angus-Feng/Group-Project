@@ -494,6 +494,7 @@ article.shop-product-border {
     #shop-item-list {
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: flex-start;
     }    
 }
 
