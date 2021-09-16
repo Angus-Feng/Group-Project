@@ -56,7 +56,6 @@ const bakeryItems = [
   }
 ];
 
-
 window.onload = e => {
   
   // loop through the bakery items then display 
@@ -78,17 +77,16 @@ window.onload = e => {
     }).join('');
 
     itemList.innerHTML = itemHtml;
-  }
+  };
   
   displayItems(bakeryItems);
 
-  // add event listener on serach box 
-  const searchBox = document.getElementById('shop-search-box');
-  
-  searchBox.addEventListener('keyup', e => {
+  const searchItems = e => {
+    // stop event bubbling 
+    e.stopPropagation();
 
     // get input values from the search box
-    const searchVal = e.target.value.toLowerCase();
+    const searchVal = searchBox.value.toLowerCase();
     
     // filter item with the search value
     const filteredItems = bakeryItems.filter(item => {
@@ -96,11 +94,28 @@ window.onload = e => {
     });
 
     displayItems(filteredItems);
+  };
+
+  const searchBox = document.getElementById('shop-search-box');
+  const button = document.getElementById('shop-search-button');
+  
+  // add event handler on search box
+  searchBox.addEventListener('keyup', e => {
+    
+    // stop event bubbling
+    e.stopPropagation();
+
+    if (e.key === 'Enter') {
+      e.preventDefault();
+        
+    } else {
+      searchItems(e); 
+    }
   });
 
-  // add event listener on search button
-  const button = document.getElementById('shop-search-button');
-
-  button.addEventListener('click', e => {})
-
+  // add event handler on search button
+  button.addEventListener('click', e => {
+    e.preventDefault();
+    searchItems(e);
+  });
 }
