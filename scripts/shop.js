@@ -5,7 +5,7 @@ const bakeryItems = [
     type: "cakes",
     imgUrl: "../images/blackberry-cake.jpeg",
     title: "vanila black berry",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum numquam magni sed voluptas delenitiomnis quod amet. Enim cum blanditiis eligendi numquam ullam dolorem accusantium optio vitae perferendis iste. Dolorum.",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum numquam magni sed voluptas delenitiomnis quod amet.",
     portion: "4-6",
     price: 40
   },
@@ -14,7 +14,7 @@ const bakeryItems = [
     type: "cakes",
     imgUrl: "../images/rasberry.jpeg",
     title: "berry festival",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum numquam magni sed voluptas delenitiomnis quod amet. Enim cum blanditiis eligendi numquam ullam dolorem accusantium optio vitae perferendis iste. Dolorum.",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum numquam magni sed voluptas delenitiomnis quod amet.",
     portion: "3-4",
     price: 30
   },
@@ -23,7 +23,7 @@ const bakeryItems = [
     type: "cakes",
     imgUrl: "../images/chocolate-moka-cream.jpeg",
     title: "chocolate moka cream",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum numquam magni sed voluptas delenitiomnis quod amet. Enim cum blanditiis eligendi numquam ullam dolorem accusantium optio vitae perferendis iste. Dolorum.",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum numquam magni sed voluptas delenitiomnis quod amet.",
     portion: "4-6",
     price: 40
   },
@@ -32,7 +32,7 @@ const bakeryItems = [
     type: "cakes",
     imgUrl: "../images/oreo-chocolate.jpeg",
     title: "oreo chocolate",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum numquam magni sed voluptas delenitiomnis quod amet. Enim cum blanditiis eligendi numquam ullam dolorem accusantium optio vitae perferendis iste. Dolorum.",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum numquam magni sed voluptas delenitiomnis quod amet.",
     portion: "3-4",
     price: 30
   },
@@ -41,7 +41,7 @@ const bakeryItems = [
     type: "cakes",
     imgUrl: "../images/blueberry-cream.jpeg",
     title: "blueberry walnut",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum numquam magni sed voluptas delenitiomnis quod amet. Enim cum blanditiis eligendi numquam ullam dolorem accusantium optio vitae perferendis iste. Dolorum.",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum numquam magni sed voluptas delenitiomnis quod amet.",
     portion: "3-4",
     price: 35
   },
@@ -50,7 +50,7 @@ const bakeryItems = [
     type: "cakes",
     imgUrl: "../images/cocoa-cheese.jpeg",
     title: "cocoa cheese",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum numquam magni sed voluptas delenitiomnis quod amet. Enim cum blanditiis eligendi numquam ullam dolorem accusantium optio vitae perferendis iste. Dolorum.",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum numquam magni sed voluptas delenitiomnis quod amet.",
     portion: "4-6",
     price: 40
   }
