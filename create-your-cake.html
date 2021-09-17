@@ -1,220 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Bring your own creativity" />
-    <meta name="author" content="Feng Han" />
-    <title>Chez Feng | Create your cake</title>
-    <!-- main css link -->
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/jquery-ui.css">
-    <!-- JS & JQuery links -->
-    <script src="scripts/JQuery3.6.js"></script>
-    <script src="scripts/jquery-ui.js"></script>
-    <script src="scripts/create-your-cake.js"></script>
-    <!-- favicon -->
-    <link rel="shourtcut icon" type="image/png" href="images/cupcake.png" />
-  </head>
-  <body>
-    <div class="container">
-      <div id="info-panel">
-        <p>275 Rue Lakeshore Road, Sainte-Anne-de-Bellevue, QC H9X 3L9</p>
-        <p><span>|</span>Daily 7AM - 6PM</p>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Bring your own creativity" />
+  <meta name="author" content="Feng Han" />
+  <title>Chez Feng | Create your cake</title>
+  <!-- main css link -->
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/jquery-ui.css">
+  <!-- JS & JQuery links -->
+  <script src="scripts/JQuery3.6.js"></script>
+  <script src="scripts/jquery.validate.min.js"></script>
+  <script src="scripts/additional-methods.min.js"></script>
+  <script src="scripts/jquery-ui.js"></script>
+  <script src="scripts/create-your-cake.js"></script>
+  <!-- favicon -->
+  <link rel="shourtcut icon" type="image/png" href="images/cupcake.png" />
+</head>
+
+<body>
+  <div class="container">
+    <div id="info-panel">
+      <p>275 Rue Lakeshore Road, Sainte-Anne-de-Bellevue, QC H9X 3L9</p>
+      <p><span>|</span>Daily 7AM - 6PM</p>
+    </div>
+    <!-- nav starts -->
+    <nav id="nav">
+      <div id="main-nav" class="hidden">
+        <p><a href="index.html" class="logo-left">CHEZ FENG.</a></p>
+        <ul class="uppercase" id="menu">
+          <li><a href="shop.html">shop now</a></li>
+          <li><a href="create-your-cake.html">create your cake</a></li>
+          <li><a href="recipe.html">weekly recipe</a></li>
+          <li><a href="about.html">about us</a></li>
+          <li><a href="contact.html">contact us</a></li>
+        </ul>
+        <ul id="languages">
+          <li><a href="create-your-cake.html">EN</a></li>
+          <li>|</li>
+          <li><a href="create-your-cake-fr.html">FR</a></li>
+        </ul>
       </div>
-      <!-- nav starts -->
-      <nav id="nav">
-        <div id="main-nav" class="hidden">
-          <p><a href="index.html" class="logo-left">CHEZ FENG.</a></p>
-          <ul class="uppercase" id="menu">
-            <li><a href="shop.html">shop now</a></li>
-            <li><a href="create-your-cake.html">create your cake</a></li>
-            <li><a href="recipe.html">weekly recipe</a></li>
-            <li><a href="about.html">about us</a></li>
-            <li><a href="contact.html">contact us</a></li>
-          </ul>
-          <ul id="languages">
-            <li><a href="create-your-cake.html">EN</a></li>
-            <li>|</li>
-            <li><a href="create-your-cake-fr.html">FR</a></li>
-          </ul>
+      <div id="mobile-nav">
+        <p><a href="index.html" class="logo-right">CHEZ FENG.</a></p>
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+    <!-- nav ends -->
+    <header id="cake-header" class="colored-header">
+      <h1 class="uppercase">CREATE YOUR CAKE</h1>
+      <P class="uppercase">BRING YOUR CREATIVITY</P>
+    </header>
+    <img class="zigzag-line" src="images/black-zig-zag.png" alt="zig-zag-line" />
+    <!-- main start -->
+    <main id="cake-main">
+      <div id="slogan-cake">
+        <p>Select your ingredients <br>
+          Pick the decorations <br>
+          Create a cake of your own style</p>
+      </div>
+      <form id="create-your-cake-form" name="create-your-cake-form" method="POST" action="thank-you.html" autocomplete="on" autocapitalize="words">
+        <fieldset id="main-form-create-cake">
+          <fieldset id="cake-details">
+            <table>
+              <tr class="cake-form-title">
+                <td colspan="2">
+                  Cake Details
+                </td>
+              </tr>
+              <tr><br></tr>
+              <tr>
+                <td>
+                  <label for="weight">Weight(lb)</label>
+                </td>
+                <td>
+                  <input type="number" id="weight" name="weight" maxlength="4" autofocus>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="flavor">Flavor</label>
+                </td>
+                <td>
+                  <select name="Flavor" id="flavor" required>
+                    <option value="vanila">Vanila</option>
+                    <option value="chocolate">Chocolate</option>
+                    <option value="pistachio">Pistachio</option>
+                    <option value="strawberry">Strawberry</option>
+                    <option value="salted-buttercream">Salted Buttercream</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="extra-decors">Extra Decors</label>
+                </td>
+                <td id="decor">
+                  <input type="checkbox" id="decor1" value="berries">
+                  <label for="decor1">Berries</label><br>
+                  <input type="checkbox" id="decor2" value="choco-bar">
+                  <label for="decor2">Choco bar</label><br>
+                  <input type="checkbox" id="decor3" value="macaron">
+                  <label for="decor3">Macaron</label><br>
+                  <input type="checkbox" id="decor4" value="flowers">
+                  <label for="decor4">Flowers</label><br>
+                  <input type="checkbox" id="decor5" value="sparcle-candies">
+                  <label for="decor5">Sparcle Candies</label><br>
+                  <input type="checkbox" id="decor6" value="ferrero-rocher">
+                  <label for="decor6">Ferrero Rocher</label><br>
+                  <input type="checkbox" id="decor7" value="birthday-candles">
+                  <label for="decor7">Birthday Candles</label><br>
+                  <input type="checkbox" id="decor8" value="paper-banner">
+                  <label for="decor8">Paper Banner</label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="comments">Comments & Allergies</label>
+                </td>
+                <td>
+                  <input type="text" id="comments" name="comments" maxlength="500">
+                </td>
+              </tr>
+            </table>
+          </fieldset>
+          <fieldset id="contact-info">
+            <table>
+              <tr class="cake-form-title">
+                <td colspan="2">
+                  Contact Info
+                </td>
+              </tr>
+              <tr><br></tr>
+              <tr>
+                <td>
+                  <label for="full-name">Name</label>
+                </td>
+                <td>
+                  <input type="text" id="fullName" name="fullName" maxlength="50" >
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="phone">Phone</label>
+                </td>
+                <td>
+                  <input type="text" id="phone" name="phone" size="10" minlength="10" maxlength="10" >
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="email">Email</label>
+                </td>
+                <td>
+                  <input type="email" id="email" name="email" placeholder="your_email@example.com" >
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="address">Address</label>
+                </td>
+                <td>
+                  <input type="text" id="address" name="address" maxlength="50" >
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <label for="schedule">When to delivery/Pickup</label>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><input type="text" id="schedule" name="schedule" ></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>
+                  <input type="radio" id="delivery" name="deliv-type">
+                  <label for="delivery">Delivery</label>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>
+                  <input type="radio" id="pickup" name="deliv-type" checked='checked'>
+                  <label for="pickup">Pick up in store</label>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <label for="sample-image">Uplaod your Sample Image(optional)</label>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>
+                  <input type="file" accept="image/*" id="sample-image" name="sample-image" onchange="loadFile(event)">
+                </td>
+              </tr>
+              <div id="sample-row">
+                <img id="sample-img" width="auto" height="150px">
+              </div>
+            </table>
+          </fieldset>
+        </fieldset>
+        <br>
+        <br>
+        <div id="submit-cake">
+          <input type="submit" class="button" value="GET THE PRICE!">
         </div>
-        <div id="mobile-nav">
-          <p><a href="index.html" class="logo-right">CHEZ FENG.</a></p>
-          <i class="fas fa-bars"></i>
-        </div>
-      </nav>
-      <!-- nav ends -->
-      <header id="cake-header" class="colored-header">
-        <h1 class="uppercase">CREATE YOUR CAKE</h1>
-        <P class="uppercase">BRING YOUR CREATIVITY</P>
-      </header>
-      <img class="zigzag-line" src="images/black-zig-zag.png" alt="zig-zag-line" />
-      <!-- main start -->
-      <main id="cake-main">
-          <div id="slogan-cake">
-              <p>Select your ingredients <br>
-                Pick the decorations <br>
-                Create a cake of your own style</p>
-          </div>
-        <form id="create-your-cake-form" method="POST" action="/thank-you.html" autocomplete="on" autocapitalize="words">
-            <fieldset id="main-form-create-cake">
-                <fieldset id="cake-details">
-                    <table>
-                        <tr class="cake-form-title">
-                          <td colspan="2">
-                            Cake Details
-                          </td>
-                        </tr>
-                        <tr><br></tr>
-                        <tr>
-                            <td>
-                                <label for="weight">Weight(lb)</label>
-                            </td>
-                            <td>
-                                <input type="text" id="weight" name="weight" maxlength="4" autofocus required>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="flavor">Flavor</label>
-                            </td>
-                            <td>
-                                <select name="Flavor" id="flavor" required>
-                                    <option value="vanila">Vanila</option>
-                                    <option value="chocolate">Chocolate</option>
-                                    <option value="pistachio">Pistachio</option>
-                                    <option value="strawberry">Strawberry</option>
-                                    <option value="salted-buttercream">Salted Buttercream</option>
-                                </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="extra-decors">Extra Decors</label>
-                            </td>
-                            <td id="decor">
-                                <input type="checkbox" id="decor1" value="berries">
-                                <label for="decor1">Berries</label><br>
-                                <input type="checkbox" id="decor2" value="choco-bar">
-                                <label for="decor2">Choco bar</label><br>
-                                <input type="checkbox" id="decor3" value="macaron">
-                                <label for="decor3">Macaron</label><br>
-                                <input type="checkbox" id="decor4" value="flowers">
-                                <label for="decor4">Flowers</label><br>
-                                <input type="checkbox" id="decor5" value="sparcle-candies">
-                                <label for="decor5">Sparcle Candies</label><br>
-                                <input type="checkbox" id="decor6" value="ferrero-rocher">
-                                <label for="decor6">Ferrero Rocher</label><br>
-                                <input type="checkbox" id="decor7" value="birthday-candles">
-                                <label for="decor7">Birthday Candles</label><br>
-                                <input type="checkbox" id="decor8" value="paper-banner">
-                                <label for="decor8">Paper Banner</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="comments">Comments & Allergies</label>
-                            </td>
-                            <td>
-                                <input type="text" id="comments" name="comments" maxlength="500">
-                            </td>
-                        </tr>
-                    </table>
-                </fieldset>
-                <fieldset id="contact-info">
-                    <table>
-                      <tr class="cake-form-title">
-                        <td colspan="2">
-                          Contact Info
-                        </td>
-                      </tr>
-                      <tr><br></tr>
-                        <tr>
-                            <td>
-                                <label for="full-name">Name</label>
-                            </td>
-                            <td>
-                                <input type="text" id="full-name" name="full-name" maxlength="50" required>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="phone">Phone</label>
-                            </td>
-                            <td>
-                                <input type="text" id="phone" name="phone" size="10" minlength="10" maxlength="10" required>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="email">Email</label>
-                            </td>
-                            <td>
-                                <input type="email" id="email" name="email" placeholder="your_email@example.com" required>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="address">Address</label>
-                            </td>
-                            <td>
-                                <input type="text" id="address" name="address" maxlength="50" required>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">
-                                <label for="schedule">When to delivery/Pickup</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td><input type="text" id="schedule" name="schedule" required></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>
-                                <input type="radio" id="delivery" name="deliv-type">
-                                <label for="delivery">Delivery</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>
-                                <input type="radio" id="pickup" name="deliv-type">
-                                <label for="pickup">Pick up in store</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">
-                                <label for="sample-image">Uplaod your Sample Image(optional)</label>
-                            </td>
-                        </tr>
-                        <tr>
-                          <td></td>
-                            <td>
-                                <input type="file" accept="image/*" id="sample-image" name="sample-image" onchange="loadFile(event)">
-                            </td>
-                        </tr>
-                        <div id="sample-row">
-                          <img id="sample-img" width="auto" height="150px">
-                        </div>
-                    </table>
-                </fieldset>
-            </fieldset>
-            <br>
-            <br>
-            <div id="submit-cake">
-              <input type="submit" class="button" value="GET THE PRICE!">
-            </div>
-            <br>
-            <br>
-            <br>
-        </form>
-      </main>
-      <!-- main ends -->
-      <!-- footer starts -->
+        <br>
+        <br>
+        <br>
+      </form>
+    </main>
+    <!-- main ends -->
+    <!-- footer starts -->
     <footer id="footer">
       <div id="footer-wrapper">
         <div id="address" class="footer-column">
@@ -243,8 +247,7 @@
         </div>
         <form class="footer-column" id="subscribe" method="POST" action="#">
           <label id="subscribe-label" for="email-address">Receive our weekly recipe!</label>
-          <input id="email-address" type="email" minlength="5"
-          maxlength="30"placeholder="Enter your email" />
+          <input id="email-address" type="email" minlength="5" maxlength="30" placeholder="Enter your email" />
           <input class="uppercase button" type="submit" value="subscribe" />
           <div id="social-icons">
             <i class="fab fa-facebook-square">
@@ -255,14 +258,15 @@
             </i>
             <i class="fab fa-twitter-square"></i>
             <a href="#"></a>
-          </form>
-        </div>
+        </form>
       </div>
-      <div id="copyright">
-        <p>Copyright 2021 &copy; Created by team FEBM with love ❤️</p>
-      </div>
-    </footer>
-    <!-- footer ends -->
-    </div>
-  </body>
+  </div>
+  <div id="copyright">
+    <p>Copyright 2021 &copy; Created by team FEBM with love ❤️</p>
+  </div>
+  </footer>
+  <!-- footer ends -->
+  </div>
+</body>
+
 </html>
