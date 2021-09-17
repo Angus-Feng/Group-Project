@@ -50,19 +50,20 @@
       <main id="contact-us" class="contact-us">
          
               <div id="contact-form" class="contact-form">
-                    <form id="contact-us-form" class="contact-us-form" action="#" method="POST" autocomplete="on" autocapitalize="words">
+                    <form id="contact-us-form" class="contact-us-form" action="#" method="POST" autocomplete="on" autocapitalize="words" 
+                    onsubmit="return validateForm();"> 
                       <fieldset id="form-field" class="form-field">
                           <h4 class="form-caption">Contact Us</h4>
                           <div class="form-info">
                             <div class="form-text">
                               <div>
                                 <p class="c-full-name">Name</p>
-                                <input type="text" id="input-full-name" name="full-name" maxlength="50" required />
+                                <input type="text" id="input-full-name" name="full-name" maxlength="50"/>
                               </div>
                           
                               <div>
                                 <p class="c-email">Email Address</p>
-                                <input type="email" id="input-email" placeholder="your_email@example.com" required />
+                                <input type="email" id="input-email" placeholder="your_email@example.com"/>
                               </div>
                               
                               <div>
@@ -158,10 +159,10 @@
     </footer>
     <!-- footer ends -->
     </div>
-    <script>
+    <!--<script>
       document.addEventListener('DOMContentLoaded', ()=>{
             document.getElementById('btnSubmit').addEventListener('click', addMessage);
         });
-    </script>
+    </script>-->
   </body>
 </html>
