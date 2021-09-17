@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- favicon -->
     <link rel="shourtcut icon" type="image/png" href="images/cupcake.png" />
+    <script type="text/javascript" src="scripts/data.json"></script>
     <script src="scripts/contact.js" defer></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -83,7 +85,7 @@
                             </div>
                         
                             <div id="contact-submit-button">
-                              <input type="submit" id="btnSubmit" class="button" value="Submit" />
+                              <input type="submit" id="btnSubmit" class="button" value="Submit" onclick="addMessage()" />
                             </div> 
                           </div>
                    
@@ -164,5 +166,45 @@
             document.getElementById('btnSubmit').addEventListener('click', addMessage);
         });
     </script>-->
+    <!-- <script>
+      
+      function checkData() {
+        $.ajax({
+              url: "./scripts/data.json",
+              type: "GET",
+              dataType: "json", 
+              success: function(data) {
+                  var pageData=data;
+                  for(var i=0;i<data.length;i++){
+                      console.log(pageData[i].id);
+                  }
+              }
+        })
+      }
+
+      function submitForm() {
+        var button = document.getElementById("btnSubmit")
+        let formData = {
+          id: Date.now(),          
+          name: document.getElementById('input-full-name').value,
+          email: document.getElementById('input-email').value,
+          topic: topic.options[tIndex].value,
+          msg: document.getElementById('feedback').value
+        }
+        const dog ={
+          name: "111",
+          msg: "222"
+        }
+        const jsonData = JSON.stringify(dog)
+        fs.writeFile('data.json', jsonData, finished)
+      }
+
+
+
+ 
+    </script> -->
+    <!-- <script>
+      var fs = require('fs');
+    </script> -->
   </body>
 </html>
