@@ -45,6 +45,10 @@ a {
     text-decoration: none;
 }
 
+a:visited {
+    color: #242323;
+}
+
 .zigzag-line {
     display: block;
     margin: 5em auto;
