@@ -17,6 +17,7 @@
   <script src="scripts/additional-methods.min.js"></script>
   <script src="scripts/jquery-ui.js"></script>
   <script src="scripts/create-your-cake.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
   <!-- favicon -->
   <link rel="shourtcut icon" type="image/png" href="images/cupcake.png" />
 </head>
@@ -62,7 +63,7 @@
           Pick the decorations <br>
           Create a cake of your own style</p>
       </div>
-      <form id="create-your-cake-form" name="create-your-cake-form" method="POST" action="thank-you.html" autocomplete="on" autocapitalize="words">
+      <form id="create-your-cake-form" name="create-your-cake-form" method="POST" autocomplete="on" autocapitalize="words" onsubmit="return onSubmit(this);">
         <fieldset id="main-form-create-cake">
           <fieldset id="cake-details">
             <table>
@@ -174,19 +175,19 @@
               </tr>
               <tr>
                 <td></td>
-                <td><input type="text" id="schedule" name="schedule" ></td>
+                <td><input type="text" id="schedule" name="schedule time" ></td>
               </tr>
               <tr>
                 <td></td>
                 <td>
-                  <input type="radio" id="delivery" name="deliv-type">
+                  <input type="radio" id="delivery" name="delivery">
                   <label for="delivery">Delivery</label>
                 </td>
               </tr>
               <tr>
                 <td></td>
                 <td>
-                  <input type="radio" id="pickup" name="deliv-type" checked='checked'>
+                  <input type="radio" id="pickup" name="pickup" checked>
                   <label for="pickup">Pick up in store</label>
                 </td>
               </tr>
@@ -210,11 +211,19 @@
         <br>
         <br>
         <div id="submit-cake">
-          <input type="submit" class="button" value="GET THE PRICE!">
+          <button type="submit" class="button">GET THE PRICE!</button>
         </div>
         <br>
         <br>
         <br>
+      </form>
+      <form id="result" name="result" action="thank-you.html" >
+        <table id="cake-detail">
+
+        </table>
+        <div>
+          <button type="submit" class="button">Confirm</button>
+        </div>
       </form>
     </main>
     <!-- main ends -->

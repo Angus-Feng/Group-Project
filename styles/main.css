@@ -215,6 +215,18 @@
         font-size: 30px;
     }
 
+    #result {
+        position: absolute;
+        width: 60%;
+        left: 30%;
+        top: 90%;
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+        justify-content: space-evenly;
+        font-size: 30px;
+    }
+
     input[type="text"] {
         height: 30px;
         width: 250px;
@@ -284,6 +296,14 @@
         font-size: 20px;
     }
 
+    #result {
+        position: relative;
+        width: 60%;
+        left: 20%;
+        display: flexbox;
+        font-size: 20px;
+    }
+
     input[type="text"] {
         height: 30px;
         width: 250px;
@@ -315,6 +335,13 @@
     }
 
     #main-form-create-cake {
+        position: relative;
+        width: 40%;
+        display: flexbox;
+        font-size: 20px;
+    }
+
+    #result {
         position: relative;
         width: 40%;
         display: flexbox;
