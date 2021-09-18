@@ -49,6 +49,7 @@
     <!-- main start -->
     <main class="shop-main">
       <section class="shop-container display-flex">
+        <!-- side nav -->
         <div class="shop-products-top-row display-flex">
           <aside class="display-flex shop-nav">
             <ul class="shop-product-ul">
@@ -58,6 +59,7 @@
               <li><a class="shop-product-li uppercase" href="#">Pastries</a></li>
             </ul>
           </aside>
+          <!-- search bar -->
           <div id="shop-search-container">
             <form action="#" method="get">
               <input type="text" id="shop-search-box">
@@ -67,7 +69,14 @@
             </form>
           </div>
         </div>
-        <div class="display-flex" id="shop-item-list"></div>
+        <!-- main content -->
+        <ul class="display-flex" id="shop-main-content"></ul>
+      </section>
+      <section>
+        <!-- modal container -->
+        <div id="shop-modal-container" class="hidden">
+          <div class="shop-modal"></div>
+        </div>
       </section>
     </main>
     <!-- main ends -->

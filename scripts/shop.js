@@ -57,22 +57,23 @@ const bakeryItems = [
 ];
 
 window.onload = e => {
-  
+
   // loop through the bakery items then display 
   const displayItems = items => {
-    const itemList = document.getElementById('shop-item-list');
-    
+    const itemList = document.getElementById('shop-main-content');
     const itemHtml = items.map(item => {
       return (`
-        <article class="display-flex shop-product-border">
-          <img class="shop-img" src="${item.imgUrl}">
-          <div class="shop-product-adjusting">
-            <h2 class="shop-product-header uppercase">${item.title}</h2>
-            <p>${item.description}</p>
-            <p>${item.portion} PEOPLE</p>
-            <p>$${item.price}</p>
-          </div>
-        </article>
+        <li class="display-flex shop-item-container">
+          <a href="#" class="shop-list-item">
+            <img class="shop-img" src="${item.imgUrl}">
+            <div class="shop-product-adjusting">
+              <h2 class="shop-product-header uppercase">${item.title}</h2>
+              <p>${item.description}</p>
+              <p>${item.portion} PEOPLE</p>
+              <p>$${item.price}</p>
+            </div>
+          </a>
+        </li>
       `);
     }).join('');
 
@@ -98,7 +99,9 @@ window.onload = e => {
 
   const searchBox = document.getElementById('shop-search-box');
   const button = document.getElementById('shop-search-button');
+  const modal = document.getElementById('shop-modal-container');
   
+
   // add event handler on search box
   searchBox.addEventListener('keyup', e => {
     
@@ -118,4 +121,15 @@ window.onload = e => {
     e.preventDefault();
     searchItems(e);
   });
-}
+
+  // add event handler on list item 
+  document.getElementById('shop-main-content').addEventListener('click', e => {
+    e.preventDefault();
+
+    if (e.currentTarget && e.target.closest('li').matches('li.shop-item-container')) {
+      console.log(modal);
+      console.log('hi');
+      modal.style.display = "block";
+    }
+  });
+};
