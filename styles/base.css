@@ -63,10 +63,6 @@ a:visited {
     display: none;
 }
 
-.display-block {
-    display: block;
-}
-
 .button {
     height: 46px;
     font-size: 1.5em;

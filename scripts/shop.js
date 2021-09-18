@@ -122,14 +122,24 @@ window.onload = e => {
     searchItems(e);
   });
 
+  /*********
+   * Modal 
+   *********/
+  
   // add event handler on list item 
   document.getElementById('shop-main-content').addEventListener('click', e => {
     e.preventDefault();
 
     if (e.currentTarget && e.target.closest('li').matches('li.shop-item-container')) {
-      console.log(modal);
-      console.log('hi');
-      modal.style.display = "block";
+      modal.classList.remove('hidden');
+    }
+  });
+
+  // close modal when outer modal area clicked
+  window.addEventListener('click', e => {
+    
+    if (e.target === modal) {
+      modal.classList.add('hidden');
     }
   });
 };
