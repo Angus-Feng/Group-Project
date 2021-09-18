@@ -79,7 +79,8 @@ function onSubmit(form) {
     localStorage.setItem('cake', data);
     hideForm();
     showResult();
-    data = {};
+    data = [];
+    objDecor.value = '';
     document.getElementById('result').style.visibility = 'visible';
     return false;
 }
@@ -129,4 +130,10 @@ function showResult() {
     }
 }
 
+function cancel() {
+    $("#cake-detail tr").remove();
+    document.getElementById('create-your-cake-form').style.visibility = 'visible';
+    document.getElementById('result').style.visibility = 'hidden';
+    
+}
 
