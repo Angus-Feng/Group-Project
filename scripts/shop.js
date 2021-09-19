@@ -100,7 +100,7 @@ window.onload = e => {
   const searchBox = document.getElementById('shop-search-box');
   const button = document.getElementById('shop-search-button');
   const modal = document.getElementById('shop-modal-container');
-  
+  const closeButton = document.getElementById('shop-modal-close-button');
 
   // add event handler on search box
   searchBox.addEventListener('keyup', e => {
@@ -137,8 +137,18 @@ window.onload = e => {
 
   // close modal when outer modal area clicked
   window.addEventListener('click', e => {
-    
+
     if (e.target === modal) {
+      modal.classList.add('hidden');
+    }
+  });
+
+  // close modal when the close button clicked
+
+  closeButton.addEventListener('click', e => {
+    console.log(e.currentTarget);
+
+    if (e.currentTarget === closeButton) {
       modal.classList.add('hidden');
     }
   });
