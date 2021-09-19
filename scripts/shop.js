@@ -56,6 +56,17 @@ const bakeryItems = [
   }
 ];
 
+const populateModalHtml = index => {
+  const item = bakeryItems[index];
+  return (`
+    <img class="shop-modal-img" src="${item.imgUrl}" />
+    <h2 class="shop-modal-header uppercase">${item.title}</h2>
+    <p>${item.description}</p>
+    <p>${item.portion} PEOPLE</p>
+    <p>$${item.price}</p>
+  `);
+};
+
 window.onload = e => {
 
   // loop through the bakery items then display 
@@ -63,16 +74,14 @@ window.onload = e => {
     const itemList = document.getElementById('shop-main-content');
     const itemHtml = items.map(item => {
       return (`
-        <li class="display-flex shop-item-container">
-          <a href="#" class="shop-list-item">
-            <img class="shop-img" src="${item.imgUrl}">
-            <div class="shop-product-adjusting">
-              <h2 class="shop-product-header uppercase">${item.title}</h2>
-              <p>${item.description}</p>
-              <p>${item.portion} PEOPLE</p>
-              <p>$${item.price}</p>
-            </div>
-          </a>
+        <li class="display-flex shop-list-item" data-index=${item.id} />
+          <img class="shop-img" src="${item.imgUrl}">
+          <div class="shop-product-adjusting">
+            <h2 class="shop-product-header uppercase">${item.title}</h2>
+            <p>${item.description}</p>
+            <p>${item.portion} PEOPLE</p>
+            <p>$${item.price}</p>
+          </div>
         </li>
       `);
     }).join('');
@@ -101,6 +110,8 @@ window.onload = e => {
   const button = document.getElementById('shop-search-button');
   const modal = document.getElementById('shop-modal-container');
   const closeButton = document.getElementById('shop-modal-close-button');
+  const modalBox = document.getElementById('shop-modal');
+  const modalBody = document.getElementById('shop-modal-body')
 
   // add event handler on search box
   searchBox.addEventListener('keyup', e => {
@@ -122,16 +133,20 @@ window.onload = e => {
     searchItems(e);
   });
 
-  /*********
+  /*
    * Modal 
-   *********/
+   */
   
   // add event handler on list item 
   document.getElementById('shop-main-content').addEventListener('click', e => {
     e.preventDefault();
-
-    if (e.currentTarget && e.target.closest('li').matches('li.shop-item-container')) {
-      modal.classList.remove('hidden');
+    
+    if (e.target.closest('li').matches('li.shop-list-item')) {
+      const listItem = e.target.closest('li');
+      const index = listItem.dataset.index;
+      
+      modal.classList.remove('hidden'); 
+      modalBody.innerHTML = populateModalHtml(index);
     }
   });
 
@@ -144,12 +159,10 @@ window.onload = e => {
   });
 
   // close modal when the close button clicked
-
   closeButton.addEventListener('click', e => {
-    console.log(e.currentTarget);
 
     if (e.currentTarget === closeButton) {
       modal.classList.add('hidden');
     }
-  });
+  });  
 };

@@ -450,11 +450,11 @@ form .error {
     color: #fff;
 }
 
-.shop-container, .shop-products-top-row, .shop-item-container {
+.shop-container, .shop-products-top-row, .shop-list-item {
     flex-direction: column;
 }
 
-.shop-item-container {
+.shop-list-item {
     width: 440px;
 }
 
@@ -471,7 +471,7 @@ form .error {
     height: 600px;
 }
 
-.shop-item-container {
+.shop-list-item {
     border: 3px solid #242323;
 }
 
@@ -513,11 +513,11 @@ form .error {
 }
 
 /* modal box */
-.shop-modal {
+#shop-modal {
     background-color: #fff;
-    margin: 10% auto; 
-    width: 80%;
-    height: 90%;
+    margin: 3% auto; 
+    width: 75%;
+    height: 95%;
     position: relative;
 }
 
@@ -574,7 +574,7 @@ form .error {
         margin-left: 50px;
     }
 
-    .shop-item-container {
+    .shop-list-item {
         width: 370px;
     }
     
