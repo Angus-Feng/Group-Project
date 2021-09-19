@@ -58,9 +58,10 @@ const bakeryItems = [
 
 const populateModalHtml = index => {
   const item = bakeryItems[index];
+
   return (`
-    <img class="shop-modal-img" src="${item.imgUrl}" />
-    <h2 class="shop-modal-header uppercase">${item.title}</h2>
+    <img src="${item.imgUrl}" />
+    <h2 class="uppercase">${item.title}</h2>
     <p>${item.description}</p>
     <p>${item.portion} PEOPLE</p>
     <p>$${item.price}</p>
@@ -140,9 +141,10 @@ window.onload = e => {
   // add event handler on list item 
   document.getElementById('shop-main-content').addEventListener('click', e => {
     e.preventDefault();
-    
-    if (e.target.closest('li').matches('li.shop-list-item')) {
-      const listItem = e.target.closest('li');
+
+    const listItem = e.target.closest('li');
+
+    if (e.target && listItem) {
       const index = listItem.dataset.index;
       
       modal.classList.remove('hidden'); 
