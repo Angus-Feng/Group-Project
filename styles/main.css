@@ -461,6 +461,7 @@ form .error {
 
 .shop-list-item {
     width: 440px;
+    cursor: pointer; 
 }
 
 #shop-main-content {
@@ -491,7 +492,7 @@ form .error {
 
 .shop-product-adjusting p:first-of-type {
     font-size: 1.4em;
-    font-family: Khand, arial;
+    font-family: 'Khand', arial;
     padding-bottom: 10px;
 }
 
@@ -522,8 +523,91 @@ form .error {
     background-color: #fff;
     margin: 3% auto; 
     width: 75%;
-    height: 95%;
+    height: 920px;
     position: relative;
+}
+
+#shop-modal-body :not(:first-child),
+#shop-modal-footer {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* modal body */
+#shop-modal-body img {
+    width: 100%;
+    height: 500px;
+}
+
+#shop-modal-body h2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+
+#shop-modal-body p:first-of-type {
+    font-family: 'Khand', arial;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding-bottom: 15px;
+}
+
+#shop-modal-body p:not(:first-of-type), 
+#shop-modal-footer {
+    letter-spacing: 0.5px;
+    font-size: 25px;
+    font-family: 'Teko', arial;
+}
+
+/* modal footer */
+#shop-modal-quantity-wrapper {
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* remove spin button for number input */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#shop-modal-quantity-selection input[type=number] {
+    width: 50px;
+    border: none;
+    text-align: center;
+    font-size: 25px;
+}
+
+#shop-modal-quantity-selection button {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    border: solid #242323 3px;
+    border-radius: 50%;
+    background-color: #fff;  
+    cursor: pointer; 
+}    
+
+#shop-modal-footer input[type=submit] {
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    border: none;
+    background-color: #242323;
+    color: #fff;
+    font-size: 20px;
+    font-family: "Oswald", sans-serif;
+    cursor: pointer; 
+}
+
+#shop-modal-footer input[type=submit]:hover {
+    background-color: #fff;
+    color: #242323;
+    border: solid 3px #242323;
 }
 
 /* modal close button */
