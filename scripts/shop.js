@@ -76,7 +76,7 @@ window.onload = e => {
     const itemHtml = items.map(item => {
       return (`
         <li class="display-flex shop-list-item" data-index=${item.id} />
-          <img class="shop-img" src="${item.imgUrl}">
+          <img src="${item.imgUrl}">
           <div class="shop-product-adjusting">
             <h2 class="shop-product-header uppercase">${item.title}</h2>
             <p>${item.description}</p>
