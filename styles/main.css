@@ -518,6 +518,25 @@ form .error {
     margin: 10% auto; 
     width: 80%;
     height: 90%;
+    position: relative;
+}
+
+/* modal close button */
+#shop-modal-close-button {
+    width: 30px;
+    height: 30px;
+    background-color: #242323;
+    border-radius: 50%;
+    position: absolute;
+    top: -14px;
+    right: -13px;
+    cursor: pointer;  
+}
+
+#shop-modal-close-button i {
+    font-size: 20px;
+    color: #fff;
+    padding: 5px 8px;
 }
 
 /* media query */
