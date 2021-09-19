@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="styles/main.css" />
     <!-- favicon -->
     <link rel="shourtcut icon" type="image/png" href="images/cupcake.png" />
+    <script src="scripts/contact.js" defer></script>
   </head>
   <body>
     <div class="container">
@@ -39,10 +40,12 @@
       <header>
         <h1>Thank you for ordering !</h1>
         <P>Our quote will be sent to your e-mail address within 2 working days.</P>
+        
       </header>
       <!-- main start -->
       <main>
-        
+        <h1>Customer's feedback</h1>
+        <p id="demo"></p>
       </main>
       <!-- main ends -->
       <!-- footer starts -->
@@ -94,5 +97,17 @@
       </footer>
       <!-- footer ends -->
     </div>
+
+    <script>
+
+
+  let text = "<ul>";
+  for (let i = 0; i < messages.length; i++) {
+    text += "<li>" + messages[i] + "</li>";
+  }
+  text += "</ul>";
+
+  document.getElementById("demo").innerHTML = text;
+    </script>
   </body>
 </html>
