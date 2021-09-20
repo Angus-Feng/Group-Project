@@ -217,6 +217,10 @@
     border: none;
 }
 
+#create-your-cake-form td:not(.cake-form-title) {
+    text-align: left;
+}
+
 @media screen and (min-width: 769px) {
     #main-form-create-cake {
         position: relative;
@@ -269,11 +273,6 @@
     border: none;
 }
 
-.cake-form-title {
-    text-align: center;
-    font-weight: bold;
-}
-
 #decor {
     border: 1px solid black;
 }
@@ -289,12 +288,6 @@
 #sample-image {
     height: 150px;
 }
-
-/* #submit-cake:hover {
-    color: #000;
-    background-color: #fff;
-    border: 3px solid #000;
-} */
 
 @media screen and (min-width: 415px) and (max-width: 768px) {
     #cake-main {
