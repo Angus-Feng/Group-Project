@@ -1321,3 +1321,7 @@ input[type=number] {
 #thank-you-content p {
     font-size: 30px;
 }
+
+#thank-you-content button {
+    margin-top: 10%;
+}
