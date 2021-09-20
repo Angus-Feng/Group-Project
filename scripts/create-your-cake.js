@@ -24,7 +24,7 @@ $(document).ready(function () {
                 required: true,
                 range: [1, 100]
             },
-            fullName: "required",
+            fullName: "required", 
             phone: {
                 required: true,
                 minlength: 10,
