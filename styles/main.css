@@ -205,8 +205,7 @@
 }
 
 #result button {
-    font-size: 40px;
-    height: 110%;
+    font-size: 25px;
 }
 
 #create-your-cake-form table {
@@ -220,6 +219,8 @@
 #create-your-cake-form td:not(.cake-form-title) {
     text-align: left;
 }
+
+
 
 @media screen and (min-width: 769px) {
     #main-form-create-cake {
@@ -1026,11 +1027,11 @@ input[type=number] {
     text-align: center;
 }
 
-.contact-success-table ,th, td{
+/* .contact-success-table ,th, td{
     border: 1px solid black;
     border-collapse: collapse;
     text-align: center;
-}
+} */
 .contact-success-header{
     margin: auto;
     border: 1px solid #000000;
