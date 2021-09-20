@@ -13,7 +13,6 @@
     <script type="text/javascript" src="scripts/data.json"></script>
     <script src="scripts/contact.js" defer></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="scripts/main.js"></script>
   </head>
   <body>
     <div class="container">
@@ -24,24 +23,23 @@
       <!-- nav starts -->
       <nav id="nav">
         <div id="main-nav" class="hidden">
-          <p><a href="index.html" class="chez-feng-logo logo-left">CHEZ FENG.</a></p>
+          <p><a href="index.html" class="logo-left">CHEZ FENG.</a></p>
           <ul class="uppercase" id="menu">
-            <li id="home-page-hamburger" class="nav-item"></li>
-            <li><a class="nav-item" href="shop.html">shop now</a></li>
-            <li><a class="nav-item" href="create-your-cake.html">create your cake</a></li>
-            <li><a class="nav-item" href="recipe.html">weekly recipe</a></li>
-            <li><a class="nav-item" href="about.html">about us</a></li>
-            <li><a class="nav-item" href="contact.html">contact us</a></li>
+            <li><a href="shop.html">shop now</a></li>
+            <li><a href="create-your-cake.html">create your cake</a></li>
+            <li><a href="recipe.html">weekly recipe</a></li>
+            <li><a href="about.html">about us</a></li>
+            <li><a href="contact.html">contact us</a></li>
           </ul>
           <ul id="languages">
-            <li><a href="index.html">EN</a></li>
+            <li><a href="#">EN</a></li>
             <li>|</li>
-            <li><a href="index-fr.html">FR</a></li>
+            <li><a href="#">FR</a></li>
           </ul>
         </div>
         <div id="mobile-nav">
-          <p><a href="index.html" class="logo-right">CHEZ FENG.</a></p>
-          <i class="fas fa-bars" style="cursor: pointer;" onclick="mobileMenu();"></i>
+          <p><a href="index.html" class="logo-left">CHEZ FENG.</a></p>
+          <i class="fas fa-bars"></i>
         </div>
       </nav>
       <!-- nav ends -->
@@ -52,10 +50,10 @@
       <img class="zigzag-line" src="images/black-zig-zag.png" alt="zig-zag-line" />
       <!-- main start -->
       <main id="contact-us" class="contact-us">
-         
+
+
               <div id="contact-form" class="contact-form">
-                    <form id="contact-us-form" class="contact-us-form" action="#" method="POST" autocomplete="on" autocapitalize="words" 
-                    onsubmit="return validateForm();"> 
+                    <form id="contact-us-form" class="contact-us-form"  > 
                       <fieldset id="form-field" class="form-field">
                           <h4 class="form-caption">Contact Us</h4>
                           <div class="form-info">
@@ -87,25 +85,50 @@
                             </div>
                         
                             <div id="contact-submit-button">
-                              <input type="submit" id="btnSubmit" class="button" value="Submit" onclick="addMessage()" />
+                              <input id="contactConfirm" class="contact-button button uppercase" value="Confirm" onclick="addMessage()" />
                             </div> 
                           </div>
                    
                       </fieldset>
                     </form>
                   
-  
+                    <from id="show-contact-us-form" class="show-contact-us-form" action="thank-you.html">
+                        <div class="contact-success-header">
+                          <p id="contact-success-text" class="contact-success-text">
+                            Thank you for your message. We will reply you in two business days.
+                          </p>
+                        </div>
+                        <table class="contact-success-table">
+                          <caption>Your information is:</caption>
+               
+                          <tr>
+                            <td>Name</td>
+                            <td id="contactName"></td>
+                          </tr>
+                          <tr>
+                            <td>Email</td>
+                            <td id="contactEmail"></td>
+                          </tr>
+                          <tr>
+                            <td>Topic</td>
+                            <td id="contactTopic"></td>
+                          </tr>
+                          <tr>
+                            <td>Message</td>
+                            <td id="contactMessage"></td>
+                          </tr>
+                        </table>
+                    </from>
 
                   <div class="opening-address">
                       <p class="leftside opening-hours">OPENING HOURS:<br />SUN: 7AM - 4PM<br />MON-SAT: 7AM - 6PM</p>
                       <p class="leftside address">CHEZ FENG BAKERY<br />275 Rue Lakeshore Road<br />Sainte-Anne-de-Bellevue<br />QC H9X 3L9<br />T:514.123.1234</p>
                   </div>
               </div>
-
               <div class="map">
                 <p class="directions">Get Directions</p>
                 <div class="mapouter">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.4347843400406!2d-73.87418174867919!3d45.42073617899786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc9393408a19843%3A0x88a64ec7bbd12cb5!2s275%20Rue%20Lakeshore%2C%20Beaconsfield%2C%20QC%20H9W%204J2!5e0!3m2!1sen!2sca!4v1630393120060!5m2!1sen!2sca" width="90%" height="550" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.4347843400406!2d-73.87418174867919!3d45.42073617899786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc9393408a19843%3A0x88a64ec7bbd12cb5!2s275%20Rue%20Lakeshore%2C%20Beaconsfield%2C%20QC%20H9W%204J2!5e0!3m2!1sen!2sca!4v1630393120060!5m2!1sen!2sca" width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                   </div>
               </div>
             
@@ -183,7 +206,6 @@
               }
         })
       }
-
       function submitForm() {
         var button = document.getElementById("btnSubmit")
         let formData = {
@@ -200,9 +222,6 @@
         const jsonData = JSON.stringify(dog)
         fs.writeFile('data.json', jsonData, finished)
       }
-
-
-
  
     </script> -->
     <!-- <script>

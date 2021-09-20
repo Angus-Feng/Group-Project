@@ -12,7 +12,6 @@
   <link rel="shourtcut icon" type="image/png" href="images/cupcake.png" />
   <!-- js file -->
   <script src="scripts/shop.js"></script>
-  <script src="scripts/main.js"></script>
 </head>
 <body>
   <div class="container">
@@ -23,24 +22,23 @@
     <!-- nav starts -->
     <nav id="nav">
       <div id="main-nav" class="hidden">
-        <p><a href="index.html" class="chez-feng-logo logo-left">CHEZ FENG.</a></p>
+        <p><a href="index.html" class="logo-left">CHEZ FENG.</a></p>
         <ul class="uppercase" id="menu">
-          <li id="home-page-hamburger" class="nav-item"></li>
-          <li><a class="nav-item" href="shop.html">shop now</a></li>
-          <li><a class="nav-item" href="create-your-cake.html">create your cake</a></li>
-          <li><a class="nav-item" href="recipe.html">weekly recipe</a></li>
-          <li><a class="nav-item" href="about.html">about us</a></li>
-          <li><a class="nav-item" href="contact.html">contact us</a></li>
+          <li><a href="shop.html">shop now</a></li>
+          <li><a href="create-your-cake.html">create your cake</a></li>
+          <li><a href="recipe.html">weekly recipe</a></li>
+          <li><a href="about.html">about us</a></li>
+          <li><a href="contact.html">contact us</a></li>
         </ul>
         <ul id="languages">
-          <li><a href="index.html">EN</a></li>
+          <li><a href="#">EN</a></li>
           <li>|</li>
-          <li><a href="index-fr.html">FR</a></li>
+          <li><a href="#">FR</a></li>
         </ul>
       </div>
       <div id="mobile-nav">
         <p><a href="index.html" class="logo-right">CHEZ FENG.</a></p>
-        <i class="fas fa-bars" style="cursor: pointer;" onclick="mobileMenu();"></i>
+        <i class="fas fa-bars"></i>
       </div>
     </nav>
     <!-- nav ends -->
@@ -51,6 +49,7 @@
     <!-- main start -->
     <main class="shop-main">
       <section class="shop-container display-flex">
+        <!-- side nav -->
         <div class="shop-products-top-row display-flex">
           <aside class="display-flex shop-nav">
             <ul class="shop-product-ul">
@@ -60,16 +59,45 @@
               <li><a class="shop-product-li uppercase" href="#">Pastries</a></li>
             </ul>
           </aside>
+          <!-- search bar -->
           <div id="shop-search-container">
             <form action="#" method="get">
               <input type="text" id="shop-search-box">
-              <button type="submit" id="shop-search-button" onclick="">
+              <button type="submit" id="shop-search-button">
                 <i class="fas fa-search"></i>
               </button>
             </form>
           </div>
         </div>
-        <div class="display-flex" id="shop-item-list"></div>
+        <!-- main content -->
+        <ul class="display-flex" id="shop-main-content"></ul>
+      </section>
+      <section>
+        <!-- modal container -->
+        <div id="shop-modal-container" class="hidden">
+          <div id="shop-modal">
+            <!-- modal close button -->
+            <span id="shop-modal-close-button">
+              <i class="fas fa-times"></i>
+            </span>
+            <!-- modal body -->
+            <div id="shop-modal-body"></div>
+            <!-- modal footer -->
+            <div id="shop-modal-footer">
+              <form action="#" method="POST">
+                <div id="shop-modal-quantity-wrapper" class="display-flex">
+                  <label for="quantity">Quantity</label>
+                  <div id="shop-modal-quantity-selection" class="display-flex">
+                    <button id="shop-modal-decrement">-</button>
+                    <input type="number" min="1" max="10" value="1" name="quantity" id="quantity"/>
+                    <button id="shop-modal-increment">+</button>
+                  </div>
+                </div>
+                <input type="submit" class="uppercase" value="add to my order" id="shop-modal-order-button">
+              </form>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <!-- main ends -->

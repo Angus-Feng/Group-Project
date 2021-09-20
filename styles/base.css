@@ -45,6 +45,10 @@ a {
     text-decoration: none;
 }
 
+a:visited {
+    color: #242323;
+}
+
 .zigzag-line {
     display: block;
     margin: 5em auto;
@@ -67,6 +71,13 @@ a {
     border: 2px solid #fff;
     color: #fff;
     width: 300px;
+}
+
+.button:hover {
+    background-color: #fff;
+    border: 2px solid #242323;
+    color: #242323;
+    cursor: pointer;
 }
 
 .display-flex {
@@ -289,15 +300,6 @@ ul#menu {
     height: 40px;
 }
 
-/* #subscribe input[type=submit] {
-    height: 46px;
-    font-size: 1.5em;
-    font-family: "Oswald", sans-serif;
-    background-color: #242323;
-    border: 2px solid #fff;
-    color: #fff;
-} */
-
 #social-icons {
   display: flex;
   margin-top: 40px;
@@ -314,6 +316,18 @@ ul#menu {
 #copyright p {
     font-size: 15px;
     padding-bottom: 30px;
+}
+
+@media screen and (max-width: 480px) {
+    #footer-wrapper {
+        padding: 15% 10%;
+    }
+
+    #social-icons {
+        width: 200px;
+        gap: 41px;
+        justify-content: start;
+    }
 }
 
 @media screen and (min-width: 800px) {

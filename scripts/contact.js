@@ -1,11 +1,13 @@
-import requirejs from 'requirejs';
-var fs = requirejs('fs');
-let messages = [];
 const addMessage = () => {
-    //ev.preventDefault(); // to stop the form submitting
+    let messages = [];
+    // ev.preventDefault(); // to stop the form submitting
     let topic = document.getElementById('topic');
     let tIndex = topic.selectedIndex;
     if(validateForm()){
+        document.getElementById("contact-us-form").style.display = "none";
+        document.getElementById("show-contact-us-form").style.display = "grid";
+        document.getElementById("contact-success-text").style.display = "block";
+        console.log("1111")
         let message = {
         id: Date.now(),          
         name: document.getElementById('input-full-name').value,
@@ -20,10 +22,19 @@ const addMessage = () => {
         
         // saving to locatstorage
         localStorage.setItem('MessageList', JSON.stringify(messages));
+
+        document.getElementById("contactName").innerHTML = message["name"]
+        document.getElementById("contactEmail").innerHTML = message["email"]
+        document.getElementById("contactTopic").innerHTML = message["topic"]
+        document.getElementById("contactMessage").innerHTML = message["msg"]
     }
     
 }
 // var browserify = require('browserify');
+
+function showData(){
+
+}
 
 function validateForm() {
     // decalre variables
@@ -74,7 +85,7 @@ function validateForm() {
         return false;
     }// end if 
     else {
-        alert('Thank you for your message. We will reply you in two business days.');
+        // alert('Thank you for your message. We will reply you in two business days.');
         return true;
     }
     msgContent.style.background = 'white';
@@ -86,4 +97,3 @@ function validateForm() {
 //         console.log(data)
 //     }
 // }
-

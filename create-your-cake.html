@@ -17,7 +17,7 @@
   <script src="scripts/additional-methods.min.js"></script>
   <script src="scripts/jquery-ui.js"></script>
   <script src="scripts/create-your-cake.js"></script>
-  <script src="scripts/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
   <!-- favicon -->
   <link rel="shourtcut icon" type="image/png" href="images/cupcake.png" />
 </head>
@@ -31,24 +31,23 @@
     <!-- nav starts -->
     <nav id="nav">
       <div id="main-nav" class="hidden">
-        <p><a href="index.html" class="chez-feng-logo logo-left">CHEZ FENG.</a></p>
+        <p><a href="index.html" class="logo-left">CHEZ FENG.</a></p>
         <ul class="uppercase" id="menu">
-          <li id="home-page-hamburger" class="nav-item"></li>
-          <li><a class="nav-item" href="shop.html">shop now</a></li>
-          <li><a class="nav-item" href="create-your-cake.html">create your cake</a></li>
-          <li><a class="nav-item" href="recipe.html">weekly recipe</a></li>
-          <li><a class="nav-item" href="about.html">about us</a></li>
-          <li><a class="nav-item" href="contact.html">contact us</a></li>
+          <li><a href="shop.html">shop now</a></li>
+          <li><a href="create-your-cake.html">create your cake</a></li>
+          <li><a href="recipe.html">weekly recipe</a></li>
+          <li><a href="about.html">about us</a></li>
+          <li><a href="contact.html">contact us</a></li>
         </ul>
         <ul id="languages">
-          <li><a href="index.html">EN</a></li>
+          <li><a href="create-your-cake.html">EN</a></li>
           <li>|</li>
-          <li><a href="index-fr.html">FR</a></li>
+          <li><a href="create-your-cake-fr.html">FR</a></li>
         </ul>
       </div>
       <div id="mobile-nav">
         <p><a href="index.html" class="logo-right">CHEZ FENG.</a></p>
-        <i class="fas fa-bars" style="cursor: pointer;" onclick="mobileMenu();"></i>
+        <i class="fas fa-bars"></i>
       </div>
     </nav>
     <!-- nav ends -->
@@ -64,12 +63,12 @@
           Pick the decorations <br>
           Create a cake of your own style</p>
       </div>
-      <form id="create-your-cake-form" name="create-your-cake-form" method="POST" action="thank-you.html" autocomplete="on" autocapitalize="words">
+      <form id="create-your-cake-form" name="create-your-cake-form" method="POST" autocomplete="on" autocapitalize="words" onsubmit="return onSubmit(this);">
         <fieldset id="main-form-create-cake">
           <fieldset id="cake-details">
             <table>
-              <tr class="cake-form-title">
-                <td colspan="2">
+              <tr>
+                <td colspan="2" class="cake-form-title">
                   Cake Details
                 </td>
               </tr>
@@ -131,8 +130,8 @@
           </fieldset>
           <fieldset id="contact-info">
             <table>
-              <tr class="cake-form-title">
-                <td colspan="2">
+              <tr>
+                <td colspan="2" class="cake-form-title">
                   Contact Info
                 </td>
               </tr>
@@ -176,19 +175,19 @@
               </tr>
               <tr>
                 <td></td>
-                <td><input type="text" id="schedule" name="schedule" ></td>
+                <td><input type="text" id="schedule" name="schedule time" ></td>
               </tr>
               <tr>
                 <td></td>
                 <td>
-                  <input type="radio" id="delivery" name="deliv-type">
+                  <input type="radio" id="delivery" name="delivery">
                   <label for="delivery">Delivery</label>
                 </td>
               </tr>
               <tr>
                 <td></td>
                 <td>
-                  <input type="radio" id="pickup" name="deliv-type" checked='checked'>
+                  <input type="radio" id="pickup" name="pickup" checked>
                   <label for="pickup">Pick up in store</label>
                 </td>
               </tr>
@@ -212,11 +211,20 @@
         <br>
         <br>
         <div id="submit-cake">
-          <input type="submit" class="button" value="GET THE PRICE!">
+          <button type="submit" class="button uppercase">get the price!</button>
         </div>
         <br>
         <br>
         <br>
+      </form>
+      <form id="result" name="result" action="thank-you.html">
+        <table id="cake-detail">
+
+        </table>
+        <div>
+          <button type="submit" class="button uppercase">Confirm</button> 
+          <button type="reset" class="button uppercase" onclick="cancel()">Cancel</button>
+        </div>
       </form>
     </main>
     <!-- main ends -->

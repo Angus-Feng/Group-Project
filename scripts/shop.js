@@ -56,23 +56,49 @@ const bakeryItems = [
   }
 ];
 
+const populateModalHtml = index => {
+  const item = bakeryItems[index];
+
+  return (`
+    <img src="${item.imgUrl}" />
+    <h2 class="uppercase">${item.title}</h2>
+    <p>${item.description}</p>
+    <p>${item.portion} PEOPLE</p>
+    <p>$${item.price}</p>
+  `);
+};
+
+const increseVal = () => {
+  let numVal = parseInt(document.getElementById('quantity').value, 10);
+  numVal = isNaN(numVal) ? 0 : numVal;
+  numVal++;
+  document.getElementById('quantity').value = numVal;
+};
+
+const decreaseVal = () => {
+  let numVal = parseInt(document.getElementById('quantity').value, 10);
+  numVal = isNaN(numVal) ? 0 : numVal;
+  numVal < 1 ? numVal = 1 : '';
+  numVal--;
+  document.getElementById('quantity').value = numVal;
+};
+
 window.onload = e => {
-  
+
   // loop through the bakery items then display 
   const displayItems = items => {
-    const itemList = document.getElementById('shop-item-list');
-    
+    const itemList = document.getElementById('shop-main-content');
     const itemHtml = items.map(item => {
       return (`
-        <article class="display-flex shop-product-border">
-          <img class="shop-img" src="${item.imgUrl}">
+        <li class="display-flex shop-list-item" data-index=${item.id} />
+          <img src="${item.imgUrl}">
           <div class="shop-product-adjusting">
             <h2 class="shop-product-header uppercase">${item.title}</h2>
             <p>${item.description}</p>
             <p>${item.portion} PEOPLE</p>
             <p>$${item.price}</p>
           </div>
-        </article>
+        </li>
       `);
     }).join('');
 
@@ -98,7 +124,14 @@ window.onload = e => {
 
   const searchBox = document.getElementById('shop-search-box');
   const button = document.getElementById('shop-search-button');
-  
+  const modal = document.getElementById('shop-modal-container');
+  const closeButton = document.getElementById('shop-modal-close-button');
+  const modalBox = document.getElementById('shop-modal');
+  const modalBody = document.getElementById('shop-modal-body');
+  const incrementBtn = document.getElementById('shop-modal-increment');
+  const decrementBtn = document.getElementById('shop-modal-decrement');
+  const orderBtn = document.getElementById('shop-modal-order-button');
+
   // add event handler on search box
   searchBox.addEventListener('keyup', e => {
     
@@ -118,4 +151,53 @@ window.onload = e => {
     e.preventDefault();
     searchItems(e);
   });
-}
+
+  /*
+   * Modal 
+   */
+  
+  // add event handler on list item 
+  document.getElementById('shop-main-content').addEventListener('click', e => {
+    e.preventDefault();
+
+    const listItem = e.target.closest('li');
+
+    if (e.target && listItem) {
+      const index = listItem.dataset.index;
+      
+      modal.classList.remove('hidden'); 
+      modalBody.innerHTML = populateModalHtml(index);
+    }
+  });
+
+  // close modal when outer modal area clicked
+  window.addEventListener('click', e => {
+
+    if (e.target === modal) {
+      modal.classList.add('hidden');
+    }
+  });
+
+  // close modal when the close button clicked
+  closeButton.addEventListener('click', e => {
+
+    if (e.currentTarget === closeButton) {
+      modal.classList.add('hidden');
+    }
+  });  
+
+  // event listener for increase button
+  incrementBtn.addEventListener('click', e => {
+    e.preventDefault();
+    increseVal();
+  });
+
+  decrementBtn.addEventListener('click', e => {
+    e.preventDefault();
+    decreaseVal();
+  });
+
+  orderBtn.addEventListener('click', e => {
+    e.preventDefault();
+  });
+};
