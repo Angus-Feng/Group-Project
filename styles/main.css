@@ -220,7 +220,11 @@
     text-align: left;
 }
 
-
+#cake-detail {
+    font-family: "Teko", "Open Sans";
+    text-transform: capitalize;
+    margin-bottom: 50px;
+}
 
 @media screen and (min-width: 769px) {
     #main-form-create-cake {
@@ -1016,31 +1020,34 @@ input[type=number] {
     display: none;
     grid-template-columns: repeat(auto-fill,minmax(600px, 1fr));
     column-gap: 10rem;
-    padding: 4rem;
+    /* padding: 4rem; */
     background: #FFF2F2;
     
 }
 .contact-success-text{
     display: none;
-    border: solid 1px black;
+    border: solid 3px black;
     padding: 1rem 1rem;
     text-align: center;
 }
 
-/* .contact-success-table ,th, td{
+.contact-success-table,
+.contact-success-table th, 
+.contact-success-table td{
+    font-size: 20px;
     border: 1px solid black;
     border-collapse: collapse;
     text-align: center;
-} */
+}
+
 .contact-success-header{
-    margin: auto;
-    border: 1px solid #000000;
+    font-size: 23px;
+    margin: 5% auto;
     width: max-content;
     background: #FFF2F2;
-    font-size: large;
-
 }
-.mapouter{
+
+#contact-form, .map {
     margin:  0% 5% ;
 }
 .contact-form {
