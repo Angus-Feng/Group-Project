@@ -1056,14 +1056,10 @@ input[type=number] {
     column-gap: 10rem;
     padding: 4rem;
 }
-.contact-button{
+.contact-button{ 
     text-align: center;
-    padding: 0.5rem 0.5rem;
-    font-weight: bolder;
-    background: #FFF2F2;
-    color: black;
-    font-size: large;
-}
+    margin-top: 20px;
+} 
 .form-field{
     width: 42rem;
     margin-left: 0rem;
