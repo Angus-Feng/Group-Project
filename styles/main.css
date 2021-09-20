@@ -216,6 +216,10 @@
     border: none;
 }
 
+.cake-form-title {
+    text-align: center;
+}
+
 #create-your-cake-form td:not(.cake-form-title) {
     text-align: left;
 }
@@ -400,9 +404,11 @@
 
 form .error {
     color: #f00;
-    
     margin-left:9px;
     padding:1px 5px 0px 5px;
+    font-family: 'Khand', arial;
+    font-size: 18px;
+    letter-spacing: 1px;
 }
 
 /******************/
