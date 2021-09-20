@@ -21,87 +21,94 @@
   </head>
   <body>
     <div class="container">
+      <div id="info-panel">
+        <p>275 Rue Lakeshore Road, Sainte-Anne-de-Bellevue, QC H9X 3L9</p>
+        <p><span class="hidden">|</span>Daily 7AM - 6PM</p>
+      </div>
       <!-- nav starts -->
       <nav id="nav">
         <div id="main-nav" class="hidden">
+          <p><a href="index.html" class="chez-feng-logo logo-left">CHEZ FENG.</a></p>
           <ul class="uppercase" id="menu">
-            <li><a href="shop.html">shop now</a></li>
-            <li><a href="create-your-cake.html">create your cake</a></li>
-            <li><a href="recipe.html">weekly recipe</a></li>
-            <li><a href="about.html">about us</a></li>
-            <li><a href="contact.html">contact us</a></li>
+            <li id="home-page-hamburger" class="nav-item"></li>
+            <li><a class="nav-item" href="shop.html">shop now</a></li>
+            <li><a class="nav-item" href="create-your-cake.html">create your cake</a></li>
+            <li><a class="nav-item" href="recipe.html">weekly recipe</a></li>
+            <li><a class="nav-item" href="about.html">about us</a></li>
+            <li><a class="nav-item" href="contact.html">contact us</a></li>
           </ul>
           <ul id="languages">
-            <li><a href="#">EN</a></li>
+            <li><a href="index.html">EN</a></li>
             <li>|</li>
-            <li><a href="#">FR</a></li>
+            <li><a href="index-fr.html">FR</a></li>
           </ul>
         </div>
         <div id="mobile-nav">
-          <p><a href="index.html">LOGO</a></p>
-          <i class="fas fa-bars"></i>
+          <p><a href="index.html" class="logo-right">CHEZ FENG.</a></p>
+          <i class="fas fa-bars" style="cursor: pointer;" onclick="mobileMenu();"></i>
         </div>
       </nav>
-      <!-- nav ends -->
+      <!-- nav starts -->
       <header>
-        <h1>Thank you for ordering !</h1>
-        <P>Our quote will be sent to your e-mail address within 2 working days.</P>
-        
       </header>
       <!-- main start -->
       <main>
-        <h1>Customer's feedback</h1>
-        <p id="demo"></p>
+        <div id="thank-you-content">
+          <h1>Thank you for ordering !</h1>
+          <P>Our quote is sent to your e-mail address.</P>
+          <!-- <h1>Customer's feedback</h1>
+          <p id="demo"></p> -->
+        </div>
       </main>
       <!-- main ends -->
       <!-- footer starts -->
-      <footer id="footer">
-        <div id="footer-wrapper">
-          <div id="address">
-            <span>Address</span>
-            <address>
-              <p>
-                275 Rue Lakeshore Road<br />
-                Sainte-Anne-de-Bellevue<br />
-                QC H9X 3L9<br /> 
-              </p>
-            </address>
-          </div>
-          <div id="hours">
-            <span>Hours</span>
+    <footer id="footer">
+      <div id="footer-wrapper">
+        <div id="address" class="footer-column">
+          <span>Address</span>
+          <address>
             <p>
-              Monday - Saturday : 7AM - 6PM<br />
-              Sunday : 7AM - 4PM
+              275 Rue Lakeshore Road<br />
+              Sainte-Anne-de-Bellevue<br />
+              QC H9X 3L9<br />
             </p>
-          </div>
-          <div id=contact>
-            <span>Contact</span>
-            <p>
-              ActuallyIAmWebDev@ChezFeng.com<br />
-              514 123 1234
-            </p>
-          </div>
-          <div id="subscribe">
-            <span>Receive our weekly recipe!</span>
-            <input type="text" placeholder="Enter your email" />
-            <input class="uppercase" type="submit" value="subscribe" />
-            <div id="social-icons">
-              <i class="fab fa-facebook-square">
-                <a href="#"></a>
-              </i>
-              <i class="fab fa-instagram-square">
-                <a href="#"></a>
-              </i>
-              <i class="fab fa-twitter-square"></i>
+          </address>
+        </div>
+        <div id="hours" class="footer-column">
+          <span>Hours</span>
+          <p>
+            Monday - Saturday : 7AM - 6PM<br />
+            Sunday : 7AM - 4PM
+          </p>
+        </div>
+        <div id=contact class="footer-column">
+          <span>Contact</span>
+          <p>
+            ActuallyIAmWebDev@ChezFeng.com<br />
+            514 123 1234
+          </p>
+        </div>
+        <form class="footer-column" id="subscribe" method="POST" action="#">
+          <label id="subscribe-label" for="email-address">Receive our weekly recipe!</label>
+          <input id="email-address" type="email" minlength="5" maxlength="30" placeholder="Enter your email" />
+          <input class="uppercase button" type="submit" value="subscribe" />
+          <div id="social-icons">
+            <i class="fab fa-facebook-square">
               <a href="#"></a>
-            </div>
-          </div>
-        </div>
-        <div id="copyright">
-          <p>Copyright 2021 &copy; Created by team FEBM with love ❤️</p>
-        </div>
-      </footer>
-      <!-- footer ends -->
+            </i>
+            <i class="fab fa-instagram-square">
+              <a href="#"></a>
+            </i>
+            <i class="fab fa-twitter-square"></i>
+            <a href="#"></a>
+        </form>
+      </div>
+  </div>
+  <div id="copyright">
+    <p>Copyright 2021 &copy; Created by team FEBM with love ❤️</p>
+  </div>
+  </footer>
+  <!-- footer ends -->
     </div>
 
     <script>
