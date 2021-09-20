@@ -17,6 +17,7 @@
   <script src="scripts/additional-methods.min.js"></script>
   <script src="scripts/jquery-ui.js"></script>
   <script src="scripts/create-your-cake.js"></script>
+  <script src="scripts/main.js"></script>
   <!-- favicon -->
   <link rel="shourtcut icon" type="image/png" href="images/cupcake.png" />
 </head>
@@ -30,23 +31,24 @@
     <!-- nav starts -->
     <nav id="nav">
       <div id="main-nav" class="hidden">
-        <p><a href="index.html" class="logo-left">CHEZ FENG.</a></p>
+        <p><a href="index.html" class="chez-feng-logo logo-left">CHEZ FENG.</a></p>
         <ul class="uppercase" id="menu">
-          <li><a href="shop.html">shop now</a></li>
-          <li><a href="create-your-cake.html">create your cake</a></li>
-          <li><a href="recipe.html">weekly recipe</a></li>
-          <li><a href="about.html">about us</a></li>
-          <li><a href="contact.html">contact us</a></li>
+          <li id="home-page-hamburger" class="nav-item"></li>
+          <li><a class="nav-item" href="shop.html">shop now</a></li>
+          <li><a class="nav-item" href="create-your-cake.html">create your cake</a></li>
+          <li><a class="nav-item" href="recipe.html">weekly recipe</a></li>
+          <li><a class="nav-item" href="about.html">about us</a></li>
+          <li><a class="nav-item" href="contact.html">contact us</a></li>
         </ul>
         <ul id="languages">
-          <li><a href="create-your-cake.html">EN</a></li>
+          <li><a href="index.html">EN</a></li>
           <li>|</li>
-          <li><a href="create-your-cake-fr.html">FR</a></li>
+          <li><a href="index-fr.html">FR</a></li>
         </ul>
       </div>
       <div id="mobile-nav">
         <p><a href="index.html" class="logo-right">CHEZ FENG.</a></p>
-        <i class="fas fa-bars"></i>
+        <i class="fas fa-bars" style="cursor: pointer;" onclick="mobileMenu();"></i>
       </div>
     </nav>
     <!-- nav ends -->

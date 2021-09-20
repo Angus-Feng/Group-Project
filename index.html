@@ -12,13 +12,14 @@
   <!-- main css link -->
   <link rel="stylesheet" href="styles/main.css" />
   <!-- font awesome cdn link -->
-  
+
   <!-- favicon -->
   <link rel="shourtcut icon" type="image/png" href="images/cupcake.png" />
   <!-- JQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <!-- JS -->
-  <script src="scripts/index.js"></script>
+  <script src="scripts/main.js"></script>
+  <!-- <script src="scripts/index.js"></script> -->
 </head>
 
 <body>
@@ -30,13 +31,14 @@
     <!-- nav starts -->
     <nav id="nav">
       <div id="main-nav" class="hidden">
-        <p><a href="index.html" class="logo-left">CHEZ FENG.</a></p>
+        <p><a href="index.html" class="chez-feng-logo logo-left">CHEZ FENG.</a></p>
         <ul class="uppercase" id="menu">
-          <li><a href="shop.html">shop now</a></li>
-          <li><a href="create-your-cake.html">create your cake</a></li>
-          <li><a href="recipe.html">weekly recipe</a></li>
-          <li><a href="about.html">about us</a></li>
-          <li><a href="contact.html">contact us</a></li>
+          <li id="home-page-hamburger" class="nav-item"></li>
+          <li><a class="nav-item" href="shop.html">shop now</a></li>
+          <li><a class="nav-item" href="create-your-cake.html">create your cake</a></li>
+          <li><a class="nav-item" href="recipe.html">weekly recipe</a></li>
+          <li><a class="nav-item" href="about.html">about us</a></li>
+          <li><a class="nav-item" href="contact.html">contact us</a></li>
         </ul>
         <ul id="languages">
           <li><a href="index.html">EN</a></li>
@@ -46,12 +48,13 @@
       </div>
       <div id="mobile-nav">
         <p><a href="index.html" class="logo-right">CHEZ FENG.</a></p>
-        <i class="fas fa-bars"></i>
+        <i class="fas fa-bars" style="cursor: pointer;" onclick="mobileMenu();"></i>
       </div>
     </nav>
     <!-- nav ends -->
     <header class="index-header">
-      <img class="index-header-img" src="images/main-cake.png" alt="Cake with chocolate toppings." title="Cake with chocolate toppings." />
+      <img class="index-header-img" src="images/main-cake.png" alt="Cake with chocolate toppings."
+        title="Cake with chocolate toppings." />
       <div class="index-header-text">
         <h1 class="uppercase">Your everyday pastry</h1>
         <p>Our food is locally sourced, <br />
@@ -67,7 +70,9 @@
         <article class="index-article">
           <div class="index-article-column">
             <h2 class="index-article-header uppercase" id="index-article-header-1">Shop Pastries</h2>
-            <p class="index-article-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, et a? Repudiandae reprehenderit vitae ad minima sapiente quibusdam, doloremque maiores sequi excepturi iste distinctio sunt exercitationem deleniti assumenda nulla voluptatum!</p>
+            <p class="index-article-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, et a?
+              Repudiandae reprehenderit vitae ad minima sapiente quibusdam, doloremque maiores sequi excepturi iste
+              distinctio sunt exercitationem deleniti assumenda nulla voluptatum!</p>
             <a class="index-article-button uppercase" href="shop.html">Shop Now</a>
           </div>
           <div class="index-article-column">
@@ -81,13 +86,18 @@
           </div>
           <div class="index-article-column">
             <h2 class="index-article-header uppercase" id="index-article-header-2">Create your cake</h2>
-            <p class="index-article-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, et a? Repudiandae reprehenderit vitae ad minima sapiente quibusdam, doloremque maiores sequi excepturi iste distinctio sunt exercitationem deleniti assumenda nulla voluptatum!</p> 
-            <a class="index-article-button uppercase" href="create-your-cake.html">Learn More</a> </div>
+            <p class="index-article-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, et a?
+              Repudiandae reprehenderit vitae ad minima sapiente quibusdam, doloremque maiores sequi excepturi iste
+              distinctio sunt exercitationem deleniti assumenda nulla voluptatum!</p>
+            <a class="index-article-button uppercase" href="create-your-cake.html">Learn More</a>
+          </div>
         </article>
         <article class="index-article">
           <div class="index-article-column">
             <h2 class="index-article-header uppercase" id="index-article-header-3">Weekly Recipe</h2>
-            <p class="index-article-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, et a? Repudiandae reprehenderit vitae ad minima sapiente quibusdam, doloremque maiores sequi excepturi iste distinctio sunt exercitationem deleniti assumenda nulla voluptatum!</p>
+            <p class="index-article-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, et a?
+              Repudiandae reprehenderit vitae ad minima sapiente quibusdam, doloremque maiores sequi excepturi iste
+              distinctio sunt exercitationem deleniti assumenda nulla voluptatum!</p>
             <a class="index-article-button uppercase" href="recipe.html">Read More</a>
           </div>
           <div class="index-article-column">
@@ -99,16 +109,24 @@
       <section>
         <h2 class="index-chezfeng-header uppercase">#ChezFeng</h2>
         <div class="index-chezfang-flex">
-          <img id="chezfang-img1" class="index-chezfang-img index-flex-25" src="#" alt="Picture from Instagram" title="Picture from Instagram"/>
-          <img id="chezfang-img2" class="index-chezfang-img index-flex-25" src="#" alt="Picture from Instagram" title="Picture from Instagram"/>
-          <img id="chezfang-img3" class="index-chezfang-img index-flex-25" src="#" alt="Picture from Instagram" title="Picture from Instagram"/>
-          <img id="chezfang-img4" class="index-chezfang-img index-flex-25" src="#" alt="Picture from Instagram" title="Picture from Instagram"/>
+          <img id="chezfang-img1" class="index-chezfang-img index-flex-25" src="#" alt="Picture from Instagram"
+            title="Picture from Instagram" />
+          <img id="chezfang-img2" class="index-chezfang-img index-flex-25" src="#" alt="Picture from Instagram"
+            title="Picture from Instagram" />
+          <img id="chezfang-img3" class="index-chezfang-img index-flex-25" src="#" alt="Picture from Instagram"
+            title="Picture from Instagram" />
+          <img id="chezfang-img4" class="index-chezfang-img index-flex-25" src="#" alt="Picture from Instagram"
+            title="Picture from Instagram" />
         </div>
         <div class="index-chezfang-flex">
-          <img id="chezfang-img5" class="index-chezfang-img index-flex-25" src="#" alt="Picture from Instagram" title="Picture from Instagram"/>
-          <img id="chezfang-img6" class="index-chezfang-img index-flex-25" src="#" alt="Picture from Instagram" title="Picture from Instagram"/>
-          <img id="chezfang-img7" class="index-chezfang-img index-flex-25" src="#" alt="Picture from Instagram" title="Picture from Instagram"/>
-          <img id="chezfang-img8" class="index-chezfang-img index-flex-25" src="#" alt="Picture from Instagram" title="Picture from Instagram"/>
+          <img id="chezfang-img5" class="index-chezfang-img index-flex-25" src="#" alt="Picture from Instagram"
+            title="Picture from Instagram" />
+          <img id="chezfang-img6" class="index-chezfang-img index-flex-25" src="#" alt="Picture from Instagram"
+            title="Picture from Instagram" />
+          <img id="chezfang-img7" class="index-chezfang-img index-flex-25" src="#" alt="Picture from Instagram"
+            title="Picture from Instagram" />
+          <img id="chezfang-img8" class="index-chezfang-img index-flex-25" src="#" alt="Picture from Instagram"
+            title="Picture from Instagram" />
         </div>
       </section>
     </main>
@@ -142,8 +160,7 @@
         </div>
         <form class="footer-column" id="subscribe" method="POST" action="#">
           <label id="subscribe-label" for="email-address">Receive our weekly recipe!</label>
-          <input id="email-address" type="email" minlength="5"
-          maxlength="30"placeholder="Enter your email" />
+          <input id="email-address" type="email" minlength="5" maxlength="30" placeholder="Enter your email" />
           <input class="uppercase button" type="submit" value="subscribe" />
           <div id="social-icons">
             <i class="fab fa-facebook-square">
@@ -154,14 +171,15 @@
             </i>
             <i class="fab fa-twitter-square"></i>
             <a href="#"></a>
-          </form>
-        </div>
+        </form>
       </div>
-      <div id="copyright">
-        <p>Copyright 2021 &copy; Created by team FEBM with love ❤️</p>
-      </div>
-    </footer>
-    <!-- footer ends -->
+  </div>
+  <div id="copyright">
+    <p>Copyright 2021 &copy; Created by team FEBM with love ❤️</p>
+  </div>
+  </footer>
+  <!-- footer ends -->
   </div>
 </body>
+
 </html>
