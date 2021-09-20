@@ -589,6 +589,7 @@ input[type=number] {
     cursor: pointer; 
 }    
 
+/* modal submit button */
 #shop-modal-footer input[type=submit] {
     margin-top: 30px;
     width: 100%;

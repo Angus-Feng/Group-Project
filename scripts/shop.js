@@ -68,6 +68,21 @@ const populateModalHtml = index => {
   `);
 };
 
+const increseVal = () => {
+  let numVal = parseInt(document.getElementById('quantity').value, 10);
+  numVal = isNaN(numVal) ? 0 : numVal;
+  numVal++;
+  document.getElementById('quantity').value = numVal;
+};
+
+const decreaseVal = () => {
+  let numVal = parseInt(document.getElementById('quantity').value, 10);
+  numVal = isNaN(numVal) ? 0 : numVal;
+  numVal < 1 ? numVal = 1 : '';
+  numVal--;
+  document.getElementById('quantity').value = numVal;
+};
+
 window.onload = e => {
 
   // loop through the bakery items then display 
@@ -112,7 +127,10 @@ window.onload = e => {
   const modal = document.getElementById('shop-modal-container');
   const closeButton = document.getElementById('shop-modal-close-button');
   const modalBox = document.getElementById('shop-modal');
-  const modalBody = document.getElementById('shop-modal-body')
+  const modalBody = document.getElementById('shop-modal-body');
+  const incrementBtn = document.getElementById('shop-modal-increment');
+  const decrementBtn = document.getElementById('shop-modal-decrement');
+  const orderBtn = document.getElementById('shop-modal-order-button');
 
   // add event handler on search box
   searchBox.addEventListener('keyup', e => {
@@ -167,4 +185,19 @@ window.onload = e => {
       modal.classList.add('hidden');
     }
   });  
+
+  // event listener for increase button
+  incrementBtn.addEventListener('click', e => {
+    e.preventDefault();
+    increseVal();
+  });
+
+  decrementBtn.addEventListener('click', e => {
+    e.preventDefault();
+    decreaseVal();
+  });
+
+  orderBtn.addEventListener('click', e => {
+    e.preventDefault();
+  });
 };
