@@ -428,7 +428,7 @@ form .error {
   
 #shop-search-container {
     margin: 70px auto;
-    /* width: 400px; */
+    width: 400px;
     font-size: 18px;
 }
 
@@ -640,12 +640,12 @@ input[type=number] {
 
     #shop-search-container {
         margin: 30px auto;
-        /* width: 290px; */
+        width: 90%;
     }
 
     #shop-search-box {
         height: 35px;
-        width: 240px;
+        width: 80%;
     }
 
     #shop-search-button {
@@ -692,7 +692,7 @@ input[type=number] {
     #shop-search-container {
         order: -1;
         margin: 50px 20px;
-        /* width: 250px; */
+        width: 250px;
     }
     
     #shop-search-box {
