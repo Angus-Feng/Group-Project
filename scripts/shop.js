@@ -56,12 +56,7 @@ const bakeryItems = [
   }
 ];
 
-// using $ as a querySelector alias
-const $ = selector => document.querySelector(selector);
-
-// populate modal html with passed index of list item
 const populateModalHtml = index => {
-  
   const item = bakeryItems[index];
 
   return (`
@@ -74,32 +69,25 @@ const populateModalHtml = index => {
 };
 
 const increseVal = () => {
-  let numVal = parseInt($('#quantity').value, 10);
-
+  let numVal = parseInt(document.getElementById('quantity').value, 10);
   numVal = isNaN(numVal) ? 0 : numVal;
   numVal++;
-  $('#quantity').value = numVal;
+  document.getElementById('quantity').value = numVal;
 };
 
 const decreaseVal = () => {
-  let numVal = parseInt($('#quantity').value, 10);
-
+  let numVal = parseInt(document.getElementById('quantity').value, 10);
   numVal = isNaN(numVal) ? 0 : numVal;
   numVal < 1 ? numVal = 1 : '';
   numVal--;
-  $('#quantity').value = numVal;
+  document.getElementById('quantity').value = numVal;
 };
 
 window.onload = e => {
 
-  const searchBox = $('#shop-search-box');
-  const modal = document.getElementById('shop-modal-container');
-  const closeButton = $('#shop-modal-close-button');
-  const modalBody = $('#shop-modal-body');
-
   // loop through the bakery items then display 
   const displayItems = items => {
-
+    const itemList = document.getElementById('shop-main-content');
     const itemHtml = items.map(item => {
       return (`
         <li class="display-flex shop-list-item" data-index=${item.id} />
@@ -114,7 +102,7 @@ window.onload = e => {
       `);
     }).join('');
 
-    $('#shop-main-content').innerHTML = itemHtml;
+    itemList.innerHTML = itemHtml;
   };
   
   displayItems(bakeryItems);
@@ -134,8 +122,17 @@ window.onload = e => {
     displayItems(filteredItems);
   };
 
+  const searchBox = document.getElementById('shop-search-box');
+  const button = document.getElementById('shop-search-button');
+  const modal = document.getElementById('shop-modal-container');
+  const closeButton = document.getElementById('shop-modal-close-button');
+  const modalBody = document.getElementById('shop-modal-body');
+  const incrementBtn = document.getElementById('shop-modal-increment');
+  const decrementBtn = document.getElementById('shop-modal-decrement');
+  const orderBtn = document.getElementById('shop-modal-order-button');
+
   // add event handler on search box
-    searchBox.addEventListener('keyup', e => {
+  searchBox.addEventListener('keyup', e => {
     
     // stop event bubbling
     e.stopPropagation();
@@ -149,7 +146,7 @@ window.onload = e => {
   });
 
   // add event handler on search button
-    $('#shop-search-button').addEventListener('click', e => {
+  button.addEventListener('click', e => {
     e.preventDefault();
     searchItems(e);
   });
@@ -189,17 +186,17 @@ window.onload = e => {
   });  
 
   // event listener for increase button
-  $('#shop-modal-increment').addEventListener('click', e => {
+  incrementBtn.addEventListener('click', e => {
     e.preventDefault();
     increseVal();
   });
 
-  $('#shop-modal-decrement').addEventListener('click', e => {
+  decrementBtn.addEventListener('click', e => {
     e.preventDefault();
     decreaseVal();
   });
 
-  $('#shop-modal-order-button').addEventListener('click', e => {
+  orderBtn.addEventListener('click', e => {
     e.preventDefault();
   });
 };
