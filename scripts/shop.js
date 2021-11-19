@@ -3,7 +3,7 @@ const bakeryItems = [
   {
     id: 0,
     type: "cakes",
-    imgUrl: "../images/blackberry-cake.jpeg",
+    imgUrl: "images/blackberry-cake.jpeg",
     title: "vanila black berry",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum numquam magni sed voluptas delenitiomnis quod amet.",
     portion: "4-6",
@@ -12,7 +12,7 @@ const bakeryItems = [
   {
     id: 1,
     type: "cakes",
-    imgUrl: "../images/rasberry.jpeg",
+    imgUrl: "images/rasberry.jpeg",
     title: "berry festival",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum numquam magni sed voluptas delenitiomnis quod amet.",
     portion: "3-4",
@@ -21,7 +21,7 @@ const bakeryItems = [
   {
     id: 2,
     type: "cakes",
-    imgUrl: "../images/chocolate-moka-cream.jpeg",
+    imgUrl: "images/chocolate-moka-cream.jpeg",
     title: "chocolate moka cream",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum numquam magni sed voluptas delenitiomnis quod amet.",
     portion: "4-6",
@@ -30,7 +30,7 @@ const bakeryItems = [
   {
     id: 3,
     type: "cakes",
-    imgUrl: "../images/oreo-chocolate.jpeg",
+    imgUrl: "images/oreo-chocolate.jpeg",
     title: "oreo chocolate",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum numquam magni sed voluptas delenitiomnis quod amet.",
     portion: "3-4",
@@ -39,7 +39,7 @@ const bakeryItems = [
   {
     id: 4,
     type: "cakes",
-    imgUrl: "../images/blueberry-cream.jpeg",
+    imgUrl: "images/blueberry-cream.jpeg",
     title: "blueberry walnut",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum numquam magni sed voluptas delenitiomnis quod amet.",
     portion: "3-4",
@@ -48,7 +48,7 @@ const bakeryItems = [
   {
     id: 5,
     type: "cakes",
-    imgUrl: "../images/cocoa-cheese.jpeg",
+    imgUrl: "images/cocoa-cheese.jpeg",
     title: "cocoa cheese",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum numquam magni sed voluptas delenitiomnis quod amet.",
     portion: "4-6",
